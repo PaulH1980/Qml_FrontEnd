@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <HeaderDir>$(MSBuildThisFileDirectory)</HeaderDir>
+    <SourceDir>$(MSBuildThisFileDirectory)</SourceDir>
+    <GenDir>$(SourceDir)gen</GenDir>
+	
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <MocDir>$(QTDIR)</MocDir>
+    <MocExt>hpp</MocExt>
+    <Moc>$(MocDir)/bin/moc.exe</Moc>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win64'">
+    <MocFlags>-DUNICODE -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -I$(GenDir)/ -I$(MocDir)\include\ -I$(MocDir)\include\Qt -I$(MocDir)\include\QtCore -I$(MocDir)\include\QtDeclarative -I$(MocDir)\include\QtGui</MocFlags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win64'">
+    <MocFlags>-DUNICODE -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG=1 -DQT_CORE_LIB -I$(GenDir)/ -I$(MocDir)\include\ -I$(MocDir)\include\Qt -I$(MocDir)\include\QtCore -I$(MocDir)\include\QtDeclarative -I$(MocDir)\include\QtGui</MocFlags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <QtIncludes Include="$(HeaderDir)/**/*.$(MocExt)"/>
+  </ItemGroup>
+
+  <Target Inputs="@(QtIncludes)" 
+          Name="Moc" 
+          BeforeTargets="ClCompile" 
+          Outputs="@(QtIncludes->'$(GenDir)/moc_%(Filename).cpp')">
+    <Exec Command = "$(Moc) %(QtIncludes.identity) -nw -o $(GenDir)/moc_%(Filename).cpp $(MocFlags)"/>
+  </Target>
+
+  <Target Name="CreateDirectories" BeforeTargets="Moc">
+    <MakeDir
+        Directories="$(GenDir)"/>
+  </Target>
+
+  <Target Inputs="@(CopyToOutput)"
+          Name="CopytoOut"
+          Outputs="@(CopyToOutput->'%(DestinationFolder)/%(RecursiveDir)%(Filename)%(Extension)')"
+          AfterTargets="Link">
+  </Target>  
+  
+  <Target Name="SomeTarget" AfterTargets="Clean" >
+		<ItemGroup>
+        <FilesToDelete Include="$(GenDir)\**\*"/>
+		</ItemGroup>   
+    <Delete Files="@(FilesToDelete)" />   
+   </Target>
+  
+  
+  
+</Project>

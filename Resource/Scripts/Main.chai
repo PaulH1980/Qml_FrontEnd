@@ -1,0 +1,17 @@
+
+
+
+def LoadScene( fileName )
+{
+    
+}
+
+
+def GetWorldEntity() {
+    return __EngineContext.getWorldEntity()
+}
+
+
+
+
+

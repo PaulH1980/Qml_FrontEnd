@@ -1,0 +1,5 @@
+singleton Style 1.0 Style.qml
+singleton PropertyFlags 1.0      PropertyFlags.qml
+singleton FontAwesome   1.0      FontAwesome.qml
+singleton FlowConfig    1.0      FlowConfig.qml
+singleton AppGlobal    1.0       AppGlobal.qml

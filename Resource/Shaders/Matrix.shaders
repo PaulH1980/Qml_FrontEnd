@@ -1,0 +1,270 @@
+// shadertype=glsl
+
+/*
+	$Title			    "Inverse"
+	$FunctionName 	"Inverse"
+	$SubSection 	  "Math/Matrix/Float2x2"
+	$ShowInUi 		  "true"
+*/
+mat2 Inverse( const mat2 a )
+{
+	return inverse( a );
+}
+
+/*
+	$Title			    "Inverse"
+	$FunctionName 	"Inverse"
+	$SubSection 	  "Math/Matrix/Float3x3"
+	$ShowInUi 		  "true"
+*/
+mat3 Inverse( const mat3 a )
+{
+	return inverse( a );
+}
+
+
+/*
+	$Title			    "Inverse"
+	$FunctionName 	"Inverse"
+	$SubSection 	  "Math/Matrix/Float4x4"
+	$ShowInUi 		  "true"
+*/
+mat4 Inverse( const mat4 a )
+{
+	return inverse( a );
+}
+
+/*
+	$Title			    "Transpose"
+	$FunctionName 	"Transpose"
+	$SubSection 	  "Math/Matrix/Float2x2"
+	$ShowInUi 		  "true"
+*/
+mat2 Transpose( const mat2 a )
+{
+	return transpose( a );
+}
+
+/*
+	$Title			    "Transpose"
+	$FunctionName 	"Transpose"
+	$SubSection 	  "Math/Matrix/Float3x3"
+	$ShowInUi 		  "true"
+*/
+mat3 Transpose( const mat3 a )
+{
+	return transpose( a );
+}
+
+
+/*
+	$Title			    "Transpose"
+	$FunctionName 	"Transpose"
+	$SubSection 	  "Math/Matrix/Float4x4"
+	$ShowInUi 		  "true"
+*/
+mat4 Transpose( const mat4 a )
+{
+	return transpose( a );
+}
+
+
+/*
+	$Title			    "Determinant"
+	$FunctionName 	"Determinant"
+	$SubSection 	  "Math/Matrix/Float2x2"
+	$ShowInUi 		  "true"
+*/
+mat2 Determinant( const mat2 a )
+{
+	return determinant( a );
+}
+
+/*
+	$Title			    "Determinant"
+	$FunctionName 	"Determinant"
+	$SubSection 	  "Math/Matrix/Float3x3"
+	$ShowInUi 		  "true"
+*/
+mat3 Determinant( const mat3 a )
+{
+	return determinant( a );
+}
+
+/*
+	$Title			    "Determinant"
+	$FunctionName 	"Determinant"
+	$SubSection 	  "Math/Matrix/Float4x4"
+	$ShowInUi 		  "true"
+*/
+mat4 Determinant( const mat4 a )
+{
+	return determinant( a );
+}
+
+/*
+	$Title			    "ToFloat2x2"
+	$FunctionName 	"ToFloat2x2"
+	$SubSection 	  "Math/Matrix/Float3x3"
+	$ShowInUi 		  "true"
+*/
+mat2 ToFloat2x2( const mat3 a )
+{
+	return mat2( a );
+}
+
+/*
+	$Title			    "ToFloat2x2"
+	$FunctionName 	"ToFloat2x2"
+	$SubSection 	  "Math/Matrix/Float4x4"
+	$ShowInUi 		  "true"
+*/
+mat2 ToFloat2x2( const mat4 a )
+{
+	return mat2( a );
+}
+
+
+/*
+	$Title			  "ToFloat3x3"
+	$FunctionName "ToFloat3x3"
+	$SubSection 	"Math/Matrix/Float2x2"
+	$ShowInUi 		"true"
+*/
+mat3 ToFloat3x3( const mat2 a )
+{
+	return mat3( a );
+}
+
+/*
+	$Title			    "ToFloat3x3"
+	$FunctionName 	"ToFloat3x3"
+	$SubSection 	  "Math/Matrix/Float4x4"
+	$ShowInUi 		  "true"
+*/
+mat3 ToFloat3x3( const mat4 a )
+{
+	return mat3( a );
+}
+
+/*
+	$Title			    "ToFloat4x4"
+	$FunctionName 	"ToFloat4x4"
+	$SubSection 	  "Math/Matrix/Float2x2"
+	$ShowInUi 		  "true"
+*/
+mat4 ToFloat4x4( const mat2 a )
+{
+	return mat4( a );
+}
+
+/*
+	$Title			    "ToFloat4x4"
+	$FunctionName 	"ToFloat4x4"
+	$SubSection 	  "Math/Matrix/Float3x3"
+	$ShowInUi 		  "true"
+*/
+mat4 ToFloat4x4( const mat3 a )
+{
+	return mat4( a );
+}
+
+/*
+	$Title			    "CreateFloat2x2"
+	$FunctionName 	"CreateFloat2x2"
+	$SubSection 	  "Math/Matrix/Float2x2"
+	$ShowInUi 		  "true"
+*/
+mat2 CreateFloat2x2( const vec2 a, const vec2 b )
+{
+	return mat2( a, b );
+}
+
+/*
+	$Title			    "CreateFloat3x3"
+	$FunctionName 	"CreateFloat3x3"
+	$SubSection 	  "Math/Matrix/Float3x3"
+	$ShowInUi 		  "true"
+*/
+mat3 CreateFloat3x3( const vec3 a, const vec3 b, const vec3 c  )
+{
+	return mat3( a, b, c );
+}
+
+/*
+	$Title			    "CreateFloat4x4"
+	$FunctionName 	"CreateFloat4x4"
+	$SubSection 	  "Math/Matrix/Float4x4"
+	$ShowInUi 		  "true"
+*/
+mat4 CreateFloat4x4( const vec4 a, const vec4 b, const vec4 c, const vec4 d  )
+{
+	return mat4( a, b, c, d );
+}
+
+/*
+	$Title			    "Multiply"
+	$FunctionName 	"Multiply"
+	$SubSection 	  "Math/Matrix/Float2x2"
+	$ShowInUi 		  "true"
+*/
+mat2 Multiply( const mat2 a, const mat2 b )
+{
+	return a * b;
+}
+
+/*
+	$Title			    "Multiply"
+	$FunctionName 	"Multiply"
+	$SubSection 	  "Math/Matrix/Float3x3"
+	$ShowInUi 		  "true"
+*/
+mat3 Multiply( const mat3 a, const mat3 b )
+{
+	return a * b;
+}
+
+/*
+	$Title			    "Multiply"
+	$FunctionName 	"Multiply"
+	$SubSection 	  "Math/Matrix/Float4x4"
+	$ShowInUi 		  "true"
+*/
+mat4 Multiply( const mat4 a, const mat4 b )
+{
+	return a * b;
+}
+
+/*
+	$Title			    "Float2Multiply"
+	$FunctionName 	"Float2Multiply"
+	$SubSection 	  "Math/Matrix/Float2x2"
+	$ShowInUi 		  "true"
+*/
+vec2 Float3Multiply( const mat2 a, const vec2 b )
+{
+	return a * b;
+}
+
+
+/*
+	$Title			    "Float3Multiply"
+	$FunctionName 	"Float3Multiply"
+	$SubSection 	  "Math/Matrix/Float3x3"
+	$ShowInUi 		  "true"
+*/
+vec3 Float3Multiply( const mat3 a, const vec3 b )
+{
+	return a * b;
+}
+
+/*
+	$Title			    "Float4Multiply"
+	$FunctionName 	"Float4Multiply"
+	$SubSection 	  "Math/Matrix/Float4x4"
+	$ShowInUi 		  "true"
+*/
+vec4 Float4Multiply( const mat4 a, const vec4 b )
+{
+	return a * b;
+}

@@ -1,0 +1,960 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Generated">
+      <UniqueIdentifier>{8067102b-9aa1-4017-9907-baa4cce2682e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI">
+      <UniqueIdentifier>{5facbe3f-33db-43ec-98b4-78f493e9be82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UI">
+      <UniqueIdentifier>{574da34a-af83-420c-abdf-cc7d749377a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Interaction">
+      <UniqueIdentifier>{d5cd280c-9a00-4ba4-ab3f-e1bddc110cbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Interaction">
+      <UniqueIdentifier>{a9170639-5dc9-4e4c-a84a-bf7dd0ec795d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Misc">
+      <UniqueIdentifier>{5fa28111-a54a-4b59-a286-d1b82c2b3334}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Qml Files">
+      <UniqueIdentifier>{64584c93-b7de-4c92-922f-585e1891ce34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Qml Files\PropertyGrid">
+      <UniqueIdentifier>{10422874-f3af-416a-89c6-4ee16fb1b956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Qml Files\TreeView">
+      <UniqueIdentifier>{209cc4fe-9a36-4484-9bad-4bed7901233d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Qml Files\Widgets">
+      <UniqueIdentifier>{eb96e265-85e1-4d2e-8b92-f497554e9ccc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Qml Files\Scripts">
+      <UniqueIdentifier>{2bf60065-6b6d-4d15-9fd3-cc2cc7eecf90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Qml Files\UI">
+      <UniqueIdentifier>{95a176d7-f59e-4577-afd9-b9785e421aa1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Qml Files\Widgets\ColorWidget">
+      <UniqueIdentifier>{ad1862d3-3aa7-4123-b228-15783b655fbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Qml Files\Misc">
+      <UniqueIdentifier>{32c87bdd-66a9-45a6-9fa3-93e662f3cee3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Qml Files\Flow">
+      <UniqueIdentifier>{5a59d662-d1f2-4fd5-b0c4-37b1f35a0d49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Qml Files\Flow\ConcreteNodes">
+      <UniqueIdentifier>{6ea17bd1-6d9f-498c-b80c-3a34ad273884}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Qml Files\Flow\ConcreteNodes\Logic">
+      <UniqueIdentifier>{25396908-cb5a-4ef8-804b-37505617fdcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Qml Files\Flow\ConcreteNodes\Input">
+      <UniqueIdentifier>{a1a01c83-1574-42ad-99b3-223447a2c16c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Qml Files\Flow\ConcreteNodes\Input\Constant">
+      <UniqueIdentifier>{921e7baa-9865-43b5-98af-bd6195c10323}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Qml Files\Flow\UI">
+      <UniqueIdentifier>{f049bf94-ffba-4fa8-b89f-324faea95101}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Qml Files\Flow\Control">
+      <UniqueIdentifier>{c6eca484-48d3-4ee6-8435-b68b6c1cbfbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Qml Files\Flow\Generator">
+      <UniqueIdentifier>{6ae09c5d-7198-4bf0-b159-889ecad2a6a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Qml Files\Flow\Scripts">
+      <UniqueIdentifier>{894ea131-6b7a-4724-a2a4-23e0f30e2669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Qml Files\Widgets\GradientWidget">
+      <UniqueIdentifier>{dad5f329-691f-47e5-9b95-b6d73f71f056}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Qml Files\Widgets\ResourceBrowser">
+      <UniqueIdentifier>{4ff1834f-28a6-431f-b1a4-95a64b0462ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Qml Files\Flow\ConcreteNodes\Input\CodeBlock">
+      <UniqueIdentifier>{ccf77f64-871f-46cd-99ac-a6fd5598500c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Qml Files\Widgets\FloatInput">
+      <UniqueIdentifier>{ae632f3a-34ca-4ad8-9054-2377f29b1398}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Qml Files\Widgets\IntegerInput">
+      <UniqueIdentifier>{0b3688a1-d551-45b5-92ba-566910650187}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Qml Files\Widgets\ComboBoxInput">
+      <UniqueIdentifier>{cd8466ad-ec2e-48e9-816a-f3dca009cac4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{2d72422d-007e-4de8-9c1f-5c6db1b47dcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{cb88a26a-3420-4a83-861e-11f7257bfbc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Qml Files\Widgets\CheckBox">
+      <UniqueIdentifier>{674d4207-fe63-43c9-9099-4d10e789ddaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Qml Files\Flow\ConcreteNodes\Output">
+      <UniqueIdentifier>{8b69b59e-6956-4090-9788-f7e36e03334b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resources\Shaders">
+      <UniqueIdentifier>{afa802c6-6315-4da8-a0e7-3a7ac319e1c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Resources">
+      <UniqueIdentifier>{5aa022da-634f-44e3-880d-65d4e161079d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Descriptors">
+      <UniqueIdentifier>{ba955b3d-d7f1-4612-b1ba-612a02b21f5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders\Generated">
+      <UniqueIdentifier>{5d668f9b-c4de-42cc-b0ad-cb5bbc97de7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Scripts">
+      <UniqueIdentifier>{95708875-831e-4f57-9768-0be2ecccebe9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AppQtRoles.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="MainApplication.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrame.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="QmlLogRecipient.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ApplicationInteraction.cpp">
+      <Filter>Source Files\Interaction</Filter>
+    </ClCompile>
+    <ClCompile Include="QmlProperty.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="QmlPropertyBase.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="QmlPropertyResolver.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectPropertyModel.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="QmlTreeViewNodeBase.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="QmlTreeViewModel.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="QmlTreeViewNodeResolver.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="QmlContextMenuResolver.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="FboRenderer.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="QmlImageProvider.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="QFlowNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\moc_AppQtRoles.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\moc_EngineObjectProxy.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\moc_FboRenderer.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\moc_MainApplication.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\moc_MainFrame.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\moc_ObjectPropertyModel.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\moc_QFlowCanvas.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\moc_QFlowNode.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\moc_QmlImageProvider.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\moc_QmlProperty.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\moc_QmlPropertyBase.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\moc_QmlTreeViewModel.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\moc_QmlTreeViewNodeBase.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="UuidGen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\moc_UuidGen.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\moc_AppRegisterFlowNodes.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="QmlGlobal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gen\moc_QmlGlobal.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientEntity.cpp">
+      <Filter>Source Files\Interaction</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineObjectProxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QmlMainMenu.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MainFrame.hpp">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="MainApplication.hpp">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="AppQtRoles.hpp">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ApplicationInteractionFwd.h">
+      <Filter>Header Files\Interaction</Filter>
+    </ClInclude>
+    <ClInclude Include="ApplicationInteractionPtr.h">
+      <Filter>Header Files\Interaction</Filter>
+    </ClInclude>
+    <ClInclude Include="ApplicationBindings.h">
+      <Filter>Header Files\Interaction</Filter>
+    </ClInclude>
+    <ClInclude Include="ApplicationInteraction.h">
+      <Filter>Header Files\Interaction</Filter>
+    </ClInclude>
+    <ClInclude Include="AppException.h">
+      <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="AppIncludes.h">
+      <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="QmlLogRecipient.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="QmlPropertyResolver.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="QmlPropertyBase.hpp">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="QmlProperty.hpp">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="QmlPropertyVector.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="QmlPropertyBasePtr.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectPropertyModel.hpp">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="QmlTreeViewModel.hpp">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="QmlTreeViewNodeBase.hpp">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="QtHeaders.h">
+      <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="QmlTreeViewNodeResolver.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineObjectProxy.hpp">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="QmlContextMenuResolver.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="QmlMainMenu.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="FboRenderer.hpp">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="QmlImageProvider.hpp">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Qml\PropertyGridName.qml">
+      <Filter>Qml Files\PropertyGrid</Filter>
+    </ClInclude>
+    <ClInclude Include="Qml\MainViewTabBar.qml">
+      <Filter>Qml Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Qml\SelectFileWidget.qml">
+      <Filter>Qml Files\Widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="Qml\FlowToolBar.qml">
+      <Filter>Qml Files\Flow\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Qml\RectContainer.qml">
+      <Filter>Qml Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Qml\FlowWidgetMain.qml">
+      <Filter>Qml Files\Flow\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UuidGen.hpp">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="AppRegisterFlowNodes.hpp">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="AppTestScene.h">
+      <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="DescribeObjects.h">
+      <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="QmlGlobal.hpp">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Qml\FloatInput.qml">
+      <Filter>Qml Files\Widgets\FloatInput</Filter>
+    </ClInclude>
+    <ClInclude Include="Qml\LabelFloatInput.qml">
+      <Filter>Qml Files\Widgets\FloatInput</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientEntity.h">
+      <Filter>Header Files\Interaction</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientEntityFwd.h">
+      <Filter>Header Files\Interaction</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader\Generated\ShaderShared.h">
+      <Filter>Shaders\Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="IFileDialogs.h">
+      <Filter>Header Files\Interaction</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyGenerator.h">
+      <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Qml\PropertyFlags.qml">
+      <Filter>Qml Files\PropertyGrid</Filter>
+    </None>
+    <None Include="Qml\PropertyGrid.qml">
+      <Filter>Qml Files\PropertyGrid</Filter>
+    </None>
+    <None Include="Qml\PropertyGridBool.qml">
+      <Filter>Qml Files\PropertyGrid</Filter>
+    </None>
+    <None Include="Qml\PropertyGridColor.qml">
+      <Filter>Qml Files\PropertyGrid</Filter>
+    </None>
+    <None Include="Qml\PropertyGridEnum.qml">
+      <Filter>Qml Files\PropertyGrid</Filter>
+    </None>
+    <None Include="Qml\PropertyGridFile.qml">
+      <Filter>Qml Files\PropertyGrid</Filter>
+    </None>
+    <None Include="Qml\PropertyGridFloat.qml">
+      <Filter>Qml Files\PropertyGrid</Filter>
+    </None>
+    <None Include="Qml\PropertyGridImage.qml">
+      <Filter>Qml Files\PropertyGrid</Filter>
+    </None>
+    <None Include="Qml\PropertyGridInt.qml">
+      <Filter>Qml Files\PropertyGrid</Filter>
+    </None>
+    <None Include="Qml\PropertyGridItemBase.qml">
+      <Filter>Qml Files\PropertyGrid</Filter>
+    </None>
+    <None Include="Qml\PropertyGridPlaceHolder.qml">
+      <Filter>Qml Files\PropertyGrid</Filter>
+    </None>
+    <None Include="Qml\PropertyGridSection.qml">
+      <Filter>Qml Files\PropertyGrid</Filter>
+    </None>
+    <None Include="Qml\PropertyGridText.qml">
+      <Filter>Qml Files\PropertyGrid</Filter>
+    </None>
+    <None Include="Qml\PropertyGridVector2f.qml">
+      <Filter>Qml Files\PropertyGrid</Filter>
+    </None>
+    <None Include="Qml\PropertyGridVector2i.qml">
+      <Filter>Qml Files\PropertyGrid</Filter>
+    </None>
+    <None Include="Qml\PropertyGridVector3f.qml">
+      <Filter>Qml Files\PropertyGrid</Filter>
+    </None>
+    <None Include="Qml\PropertyGridVector3i.qml">
+      <Filter>Qml Files\PropertyGrid</Filter>
+    </None>
+    <None Include="Qml\PropertyGridVector4f.qml">
+      <Filter>Qml Files\PropertyGrid</Filter>
+    </None>
+    <None Include="Qml\PropertyGridVector4i.qml">
+      <Filter>Qml Files\PropertyGrid</Filter>
+    </None>
+    <None Include="Qml\PropGridSlider.qml">
+      <Filter>Qml Files\PropertyGrid</Filter>
+    </None>
+    <None Include="Qml\ColorSlider.qml">
+      <Filter>Qml Files\Widgets\ColorWidget</Filter>
+    </None>
+    <None Include="Qml\ColorWheel.qml">
+      <Filter>Qml Files\Widgets\ColorWidget</Filter>
+    </None>
+    <None Include="Qml\SceneTreeItem.qml">
+      <Filter>Qml Files\TreeView</Filter>
+    </None>
+    <None Include="Qml\SceneTreeView.qml">
+      <Filter>Qml Files\TreeView</Filter>
+    </None>
+    <None Include="Qml\ProgBar.qml">
+      <Filter>Qml Files\Widgets</Filter>
+    </None>
+    <None Include="Qml\ToolBarButton.qml">
+      <Filter>Qml Files\Widgets</Filter>
+    </None>
+    <None Include="Qml\DefaultTextField.qml">
+      <Filter>Qml Files\Widgets</Filter>
+    </None>
+    <None Include="Qml\DefaultLabel.qml">
+      <Filter>Qml Files\Widgets</Filter>
+    </None>
+    <None Include="Qml\DefaultButton2.qml">
+      <Filter>Qml Files\Widgets</Filter>
+    </None>
+    <None Include="Qml\FloatTextInput.qml">
+      <Filter>Qml Files\Widgets</Filter>
+    </None>
+    <None Include="Qml\Scripts\AppScripts.js">
+      <Filter>Qml Files\Scripts</Filter>
+    </None>
+    <None Include="Qml\FlowIfElseNode.qml">
+      <Filter>Qml Files\Flow\ConcreteNodes\Logic</Filter>
+    </None>
+    <None Include="Qml\FlowEqualsNode.qml">
+      <Filter>Qml Files\Flow\ConcreteNodes\Logic</Filter>
+    </None>
+    <None Include="Qml\FlowGEqualsNode.qml">
+      <Filter>Qml Files\Flow\ConcreteNodes\Logic</Filter>
+    </None>
+    <None Include="Qml\FlowGreaterNode.qml">
+      <Filter>Qml Files\Flow\ConcreteNodes\Logic</Filter>
+    </None>
+    <None Include="Qml\FlowSmallerNode.qml">
+      <Filter>Qml Files\Flow\ConcreteNodes\Logic</Filter>
+    </None>
+    <None Include="Qml\Console.qml">
+      <Filter>Qml Files\UI</Filter>
+    </None>
+    <None Include="Qml\ConsolePopup.qml">
+      <Filter>Qml Files\UI</Filter>
+    </None>
+    <None Include="Qml\CustomToolTip.qml">
+      <Filter>Qml Files\UI</Filter>
+    </None>
+    <None Include="Qml\LeftSidePanel.qml">
+      <Filter>Qml Files\UI</Filter>
+    </None>
+    <None Include="Qml\main.qml">
+      <Filter>Qml Files\UI</Filter>
+    </None>
+    <None Include="Qml\DynamicMenu.qml">
+      <Filter>Qml Files\Widgets</Filter>
+    </None>
+    <None Include="Qml\ResourceDialog.qml">
+      <Filter>Qml Files\UI</Filter>
+    </None>
+    <None Include="Qml\RightSidePanel.qml">
+      <Filter>Qml Files\UI</Filter>
+    </None>
+    <None Include="Qml\SceneRenderItem.qml">
+      <Filter>Qml Files\UI</Filter>
+    </None>
+    <None Include="Qml\SceneToolBar.qml">
+      <Filter>Qml Files\UI</Filter>
+    </None>
+    <None Include="Qml\SearchBar.qml">
+      <Filter>Qml Files\UI</Filter>
+    </None>
+    <None Include="Qml\Style.qml">
+      <Filter>Qml Files\Misc</Filter>
+    </None>
+    <None Include="Qml\Object.qml">
+      <Filter>Qml Files\Misc</Filter>
+    </None>
+    <None Include="Qml\qmldir">
+      <Filter>Qml Files\Misc</Filter>
+    </None>
+    <None Include="Qml\FontAwesome.qml">
+      <Filter>Qml Files\Misc</Filter>
+    </None>
+    <None Include="Qml\RoundRect.qml">
+      <Filter>Qml Files\Misc</Filter>
+    </None>
+    <None Include="Qml\FlowColorPreviewRect.qml">
+      <Filter>Qml Files\Flow\ConcreteNodes\Input\Constant</Filter>
+    </None>
+    <None Include="Qml\FlowConstValueNode.qml">
+      <Filter>Qml Files\Flow\ConcreteNodes\Input\Constant</Filter>
+    </None>
+    <None Include="Qml\FlowImageConstantNode.qml">
+      <Filter>Qml Files\Flow\ConcreteNodes\Input\Constant</Filter>
+    </None>
+    <None Include="Qml\FlowNodeBase.qml">
+      <Filter>Qml Files\Flow\UI</Filter>
+    </None>
+    <None Include="Qml\FlowPortBaseIn.qml">
+      <Filter>Qml Files\Flow\UI</Filter>
+    </None>
+    <None Include="Qml\FlowPortBaseOut.qml">
+      <Filter>Qml Files\Flow\UI</Filter>
+    </None>
+    <None Include="Qml\FlowPortInternal.qml">
+      <Filter>Qml Files\Flow\UI</Filter>
+    </None>
+    <None Include="Qml\FlowSelectionWidget.qml">
+      <Filter>Qml Files\Flow\UI</Filter>
+    </None>
+    <None Include="Qml\FlowRenderControl.qml">
+      <Filter>Qml Files\Flow\Control</Filter>
+    </None>
+    <None Include="Qml\FlowConnectionBase.qml">
+      <Filter>Qml Files\Flow\UI</Filter>
+    </None>
+    <None Include="Qml\TreeViewQc2.qml">
+      <Filter>Qml Files\TreeView</Filter>
+    </None>
+    <None Include="Qml\TreeItemQc2.qml">
+      <Filter>Qml Files\TreeView</Filter>
+    </None>
+    <None Include="Qml\FlowComponent.qml">
+      <Filter>Qml Files\Flow\UI</Filter>
+    </None>
+    <None Include="Qml\FlowNotEqualNode.qml">
+      <Filter>Qml Files\Flow\ConcreteNodes\Logic</Filter>
+    </None>
+    <None Include="Qml\FlowInputNodeBase.qml">
+      <Filter>Qml Files\Flow\ConcreteNodes\Input</Filter>
+    </None>
+    <None Include="Qml\FlowPreviewSelectionItem.qml">
+      <Filter>Qml Files\Flow\UI</Filter>
+    </None>
+    <None Include="Qml\FlowRenderCanvas.qml">
+      <Filter>Qml Files\Flow\UI</Filter>
+    </None>
+    <None Include="Qml\FlowDynamicMenu.qml">
+      <Filter>Qml Files\Flow\UI</Filter>
+    </None>
+    <None Include="Qml\Scripts\FlowScripts.js">
+      <Filter>Qml Files\Flow\Scripts</Filter>
+    </None>
+    <None Include="Qml\FlowPreviewImage.qml">
+      <Filter>Qml Files\Flow\ConcreteNodes\Input\Constant</Filter>
+    </None>
+    <None Include="Qml\ImageComponent.qml">
+      <Filter>Qml Files\Widgets\ResourceBrowser</Filter>
+    </None>
+    <None Include="Qml\OptionScreen.qml">
+      <Filter>Qml Files\UI</Filter>
+    </None>
+    <None Include="Qml\GradientWidget.qml">
+      <Filter>Qml Files\Widgets\GradientWidget</Filter>
+    </None>
+    <None Include="Qml\ResourceToolBar.qml">
+      <Filter>Qml Files\Widgets\ResourceBrowser</Filter>
+    </None>
+    <None Include="Qml\ResourceComboBox.qml">
+      <Filter>Qml Files\Widgets\ResourceBrowser</Filter>
+    </None>
+    <None Include="Qml\ResourceBrowser.qml">
+      <Filter>Qml Files\Widgets\ResourceBrowser</Filter>
+    </None>
+    <None Include="Qml\ResourceBrowserItem.qml">
+      <Filter>Qml Files\Widgets\ResourceBrowser</Filter>
+    </None>
+    <None Include="Qml\PropertyGridFloatSlider.qml">
+      <Filter>Qml Files\PropertyGrid</Filter>
+    </None>
+    <None Include="Qml\PropertyGridIntSlider.qml">
+      <Filter>Qml Files\PropertyGrid</Filter>
+    </None>
+    <None Include="Qml\AppGlobal.qml">
+      <Filter>Qml Files\Misc</Filter>
+    </None>
+    <None Include="Qml\ShaderBlockNodeBase.qml">
+      <Filter>Qml Files\Flow\ConcreteNodes\Input\CodeBlock</Filter>
+    </None>
+    <None Include="Qml\FlowPropertyGrid.qml">
+      <Filter>Qml Files\Flow\UI</Filter>
+    </None>
+    <None Include="Qml\ScenePropertyGrid.qml">
+      <Filter>Qml Files\UI</Filter>
+    </None>
+    <None Include="Qml\CenterPanel.qml">
+      <Filter>Qml Files\UI</Filter>
+    </None>
+    <None Include="Qml\MainPanel.qml">
+      <Filter>Qml Files\UI</Filter>
+    </None>
+    <None Include="Qml\MainMenuBar.qml">
+      <Filter>Qml Files\UI</Filter>
+    </None>
+    <None Include="Qml\PropertyGridLoader.qml">
+      <Filter>Qml Files\PropertyGrid</Filter>
+    </None>
+    <None Include="Qml\ColorWidget.qml">
+      <Filter>Qml Files\Widgets\ColorWidget</Filter>
+    </None>
+    <None Include="Qml\VecfWidget.qml">
+      <Filter>Qml Files\Widgets\FloatInput</Filter>
+    </None>
+    <None Include="Qml\IntegerInput.qml">
+      <Filter>Qml Files\Widgets\IntegerInput</Filter>
+    </None>
+    <None Include="Qml\LabelIntegerInput.qml">
+      <Filter>Qml Files\Widgets\IntegerInput</Filter>
+    </None>
+    <None Include="Qml\VeciWidget.qml">
+      <Filter>Qml Files\Widgets\IntegerInput</Filter>
+    </None>
+    <None Include="Shader\BrushShader.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\BrushShader.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\DefaultShader.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\DefaultShader.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\DefaultShader2d.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\DefaultShader2d.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\DefaultVertexFormat.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\FragShaderInput.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\FunctionDefinitions.func">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\global.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\GradientBrushShader.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\IconShader.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\IconShader.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\Irradiance.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\Irradiance.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\Irradiance.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\LassoShader.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\lightbuffer.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\LineGeomSmooth.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\LineShader.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\LineShader.geom">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\LineShader.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\LineShaderGeom.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\LineSmooth.geom">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\LineSmooth.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\MeshShader.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\MeshShader.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\ObjectTransform.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\octahedron.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\OriginAxis.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\OriginAxis.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\polystiple.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\Quake3.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\Quake3.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\Rayleigh.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\Rayleigh.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\Rayleigh.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\RayMarch.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\RayMarch.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\SelectedMesh.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\SelectedMesh.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\SelectionShader.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\SelectionShader.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\ShadowMap.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\ShadowMap.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\StyleBrush.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\Test.comp">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\TexturedBrushShader.frag">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\WireframeShader.vert">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shader\Test.compute">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Qml\LabelCheckBoxInput.qml">
+      <Filter>Qml Files\Widgets\CheckBox</Filter>
+    </None>
+    <None Include="Qml\LabelComboBoxInput.qml">
+      <Filter>Qml Files\Widgets\ComboBoxInput</Filter>
+    </None>
+    <None Include="Qml\ResourceDragItem.qml">
+      <Filter>Qml Files\Widgets\ResourceBrowser</Filter>
+    </None>
+    <None Include="Qml\RenderPassShaderNode.qml">
+      <Filter>Qml Files\Flow\ConcreteNodes\Input\CodeBlock</Filter>
+    </None>
+    <None Include="Qml\DefaultButton.qml">
+      <Filter>Qml Files\Widgets</Filter>
+    </None>
+    <None Include="Qml\VertexAttribute.qml">
+      <Filter>Qml Files\Flow\ConcreteNodes\Input\CodeBlock</Filter>
+    </None>
+    <None Include="Qml\UniformInputNode.qml">
+      <Filter>Qml Files\Flow\ConcreteNodes\Input\CodeBlock</Filter>
+    </None>
+    <None Include="Qml\VertexAttributeNode.qml">
+      <Filter>Qml Files\Flow\ConcreteNodes\Input\CodeBlock</Filter>
+    </None>
+    <None Include="Qml\VertexShaderNode.qml">
+      <Filter>Qml Files\Flow\ConcreteNodes\Input\CodeBlock</Filter>
+    </None>
+    <None Include="Qml\FlowPixShaderOutputNode.qml">
+      <Filter>Qml Files\Flow\ConcreteNodes\Output</Filter>
+    </None>
+    <None Include="Qml\FlowOutputNodeBase.qml">
+      <Filter>Qml Files\Flow\ConcreteNodes\Output</Filter>
+    </None>
+    <None Include="Qml\MeshNode.qml">
+      <Filter>Qml Files\Flow\ConcreteNodes\Input\CodeBlock</Filter>
+    </None>
+    <None Include="Qml\FlowButton.qml">
+      <Filter>Qml Files\Flow\ConcreteNodes\Input\CodeBlock</Filter>
+    </None>
+    <None Include="Qml\UniformType.qml">
+      <Filter>Qml Files\Flow\ConcreteNodes\Input\CodeBlock</Filter>
+    </None>
+    <None Include="Qml\VertexAttributeType.qml">
+      <Filter>Qml Files\Flow\ConcreteNodes\Input\CodeBlock</Filter>
+    </None>
+    <None Include="Qml\VertexShaderInNode.qml">
+      <Filter>Qml Files\Flow\ConcreteNodes\Input\CodeBlock</Filter>
+    </None>
+    <None Include="Qml\TechniqueNode.qml">
+      <Filter>Qml Files\Flow\ConcreteNodes\Input\CodeBlock</Filter>
+    </None>
+    <None Include="Resource\Descriptors\GpuStateDescriptors.desc">
+      <Filter>Resources\Descriptors</Filter>
+    </None>
+    <None Include="Resource\Descriptors\RenderPassDescriptor.desc">
+      <Filter>Resources\Descriptors</Filter>
+    </None>
+    <None Include="Resource\Descriptors\ShaderInputDescriptors.desc">
+      <Filter>Resources\Descriptors</Filter>
+    </None>
+    <None Include="Resource\DefaultResources\BaseMaterials.resource">
+      <Filter>Resources\Resources</Filter>
+    </None>
+    <None Include="Resource\DefaultResources\Drawpass.resource">
+      <Filter>Resources\Resources</Filter>
+    </None>
+    <None Include="Resource\DefaultResources\EditorTextures.resource">
+      <Filter>Resources\Resources</Filter>
+    </None>
+    <None Include="Resource\DefaultResources\Fonts.resource">
+      <Filter>Resources\Resources</Filter>
+    </None>
+    <None Include="Resource\DefaultResources\GpuStateResources.resource">
+      <Filter>Resources\Resources</Filter>
+    </None>
+    <None Include="Resource\DefaultResources\GpuUniformBuffers.resource">
+      <Filter>Resources\Resources</Filter>
+    </None>
+    <None Include="Resource\DefaultResources\Meshes.resource">
+      <Filter>Resources\Resources</Filter>
+    </None>
+    <None Include="Resource\DefaultResources\Shaders.resource">
+      <Filter>Resources\Resources</Filter>
+    </None>
+    <None Include="Resource\Shaders\Float1.shaders">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Resource\Shaders\Float2.shaders">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Resource\Shaders\Float3.shaders">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Resource\Shaders\Float4.shaders">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Resource\Shaders\Matrix.shaders">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Resource\Shaders\MiscMath.shaders">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Resource\Descriptors\OpenGLConstants.desc">
+      <Filter>Resources\Descriptors</Filter>
+    </None>
+    <None Include="Resource\DefaultResources\Techniques.resource">
+      <Filter>Resources\Resources</Filter>
+    </None>
+    <None Include="Resource\Shaders\UniformBuffers.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Resource\Scripts\AddCube.vscr">
+      <Filter>Resources\Scripts</Filter>
+    </None>
+    <None Include="Resource\Scripts\Main.vscr">
+      <Filter>Resources\Scripts</Filter>
+    </None>
+    <None Include="Shader\Brdf.glsl">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Qml\FlowLEqualsNode.qml">
+      <Filter>Qml Files\Flow\ConcreteNodes\Logic</Filter>
+    </Text>
+    <Text Include="Qml\FooterStatusBar.qml">
+      <Filter>Qml Files\Widgets</Filter>
+    </Text>
+    <Text Include="Qml\HeaderToolBar.qml">
+      <Filter>Qml Files\UI</Filter>
+    </Text>
+    <Text Include="Qml\FlowColorConstantNode.qml">
+      <Filter>Qml Files\Flow\ConcreteNodes\Input\Constant</Filter>
+    </Text>
+    <Text Include="Qml\FlowConfig.qml">
+      <Filter>Qml Files\Flow\Control</Filter>
+    </Text>
+    <Text Include="Qml\FlowNodesDesc.qml">
+      <Filter>Qml Files\Flow\Control</Filter>
+    </Text>
+    <Text Include="Qml\ComboBoxInput.qml">
+      <Filter>Qml Files\Widgets\ComboBoxInput</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Qml\AutoComplete.qml">
+      <Filter>Qml Files\Misc</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

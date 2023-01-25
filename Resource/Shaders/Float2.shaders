@@ -1,0 +1,465 @@
+
+/*
+    $Title			"Plus"
+    $FunctionName 	"Plus"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 Plus(const vec2 a, const vec2 b)
+{
+    return a + b;
+}
+
+/*
+    $Title			"Minus"
+    $FunctionName 	"Minus"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 Minus(const vec2 a, const vec2 b)
+{
+    return a - b;
+}
+
+
+/*
+    $Title			"Multiply"
+    $FunctionName 	"Multiply"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 Multiply(const vec2 a, const vec2 b)
+{
+    return a * b;
+}
+
+
+/*
+$Title			"Divide"
+$FunctionName 	"Divide"
+$SubSection 	"Math/Float2"
+$ShowInUi 		"true"
+*/
+vec2 Divide(const vec2 a, const vec2 b)
+{
+    return a / b;
+}
+
+/*
+    $Title			"Modulo"
+    $FunctionName 	"Modulo"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 Modulo(const vec2 a, const vec2 b)
+{
+    return x - y * floor(x / y);
+}
+
+
+/*
+    $Title			"Sqrt"
+    $FunctionName 	"Sqrt"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 Sqrt(const vec2 a)
+{
+    return sqrt(a);
+}
+
+/*
+    $Title			"InvSqrt"
+    $FunctionName 	"InvSqrt"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 InvSqrt(const vec2 a)
+{
+    return inversesqrt(a);
+}
+
+/*
+    $Title			"Abs"
+    $FunctionName 	"Abs"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 Abs(const vec2 a)
+{
+    return abs(a);
+}
+
+/*
+    $Title			"Floor"
+    $FunctionName 	"Floor"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 Floor(const vec2 a)
+{
+    return floor(a);
+}
+
+/*
+    $Title			"Ceil"
+    $FunctionName 	"Ceil"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 Ceil(const vec2 a)
+{
+    return ceil(a);
+}
+
+
+/*
+    $Title			"Sign"
+    $FunctionName 	"Sign"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 Sign(const vec2 a)
+{
+    return sign(a);
+}
+
+/*
+    $Title			"Fract"
+    $FunctionName 	"Fract"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 Fract(const vec2 a)
+{
+    return fract(a);
+}
+
+
+/*
+    $Title			"Min"
+    $FunctionName 	"Min"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 Min(const vec2 a, const vec2 b)
+{
+    return min(a, b);
+}
+
+/*
+    $Title			"Max"
+    $FunctionName 	"Max"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 Max(const vec2 a, const vec2 b)
+{
+    return max(a, b);
+}
+
+
+/*
+    $Title			"Step"
+    $FunctionName 	"Step"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 Step(const vec2 a)
+{
+    return step(a);
+}
+
+/*
+    $Title			"SmoothStep"
+    $FunctionName 	"SmoothStep"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 SmoothStep(const vec2 a)
+{
+    return smoothstep(a);
+}
+
+/*
+    $Title			"Lerp"
+    $FunctionName 	"Lerp"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 Lerp(const vec2 start, const vec2 end, const vec2 weight)
+{
+    return mix(start, end, weight);
+}
+
+/*
+    $Title			"Clamp"
+    $FunctionName 	"Clamp"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 Clamp(const vec2 min, const vec2 max, const vec2 value)
+{
+    return clamp(value, min, max);
+}
+
+/*
+    $Title			"Cos"
+    $FunctionName 	"Cos"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 Cos(const vec2 a)
+{
+    return cos(a);
+}
+
+/*
+    $Title			"Sin"
+    $FunctionName 	"Sin"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 Sin(const vec2 a)
+{
+    return sin(a);
+}
+
+/*
+    $Title			"Tan"
+    $FunctionName 	"Tan"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 Tan(const vec2 a)
+{
+    return tan(a);
+}
+
+/*
+    $Title			"ACos"
+    $FunctionName 	"ACos"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 ACos(const vec2 a)
+{
+    return acos(a);
+}
+
+/*
+    $Title			"ASin"
+    $FunctionName 	"ASin"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 ASin(const vec2 a)
+{
+    return asin(a);
+}
+
+/*
+    $Title			"ATan"
+    $FunctionName 	"ATan"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 ATan(const vec2 a, const vec2 b)
+{
+    return atan(a, b);
+}
+
+/*
+    $Title			"ToDegrees"
+    $FunctionName 	"ToDegrees"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 ToDegrees(const vec2 a)
+{
+    return degrees(a);
+}
+
+/*
+    $Title			"ToRadians"
+    $FunctionName 	"ToRadians"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 ToRadians(const vec2 a)
+{
+    return radians(a);
+}
+
+
+/*
+    $Title			"Pow"
+    $FunctionName 	"Pow"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 Pow(const vec2 a, const vec2 b)
+{
+    return pow(a, b);
+}
+
+/*
+    $Title			"Pow2"
+    $FunctionName 	"Pow2"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 Pow2(const vec2 a)
+{
+    return pow2(a);
+}
+
+/*
+    $Title			"Log"
+    $FunctionName 	"Log"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 Log(const vec2 a, const vec2 b)
+{
+    return log(a, b);
+}
+
+/*
+    $Title			"Log2"
+    $FunctionName 	"Log2"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 Log2(const vec2 a)
+{
+    return log2(a);
+}
+
+/*
+    $Title			"Exp"
+    $FunctionName 	"Exp"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 Exp(const vec2 a)
+{
+    return exp(a);
+}
+
+/*
+    $Title			"Exp2"
+    $FunctionName 	"Exp2"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 Exp2(const vec2 a)
+{
+    return exp2(a);
+}
+
+
+/*
+    $Title			"Distance"
+    $FunctionName 	"Distance"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+float Distance(const vec2 a, const vec2 b)
+{
+    return distance(a, b);
+}
+
+/*
+    $Title			"Distance"
+    $FunctionName 	"Distance"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+float Length(const vec2 a)
+{
+    return length(a);
+}
+
+
+/*
+    $Title			"Dot"
+    $FunctionName 	"Dot"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+float Dot(const vec2 a, const vec2 b)
+{
+    return dot(a, b)
+}
+
+
+/*
+    $Title			"FaceForward"
+    $FunctionName 	"FaceForward"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 FaceForward(const vec2 N, const vec2 I, const vec2 NRef)
+{
+    return faceforward(N, I, NRef);
+}
+
+/*
+    $Title			"Reflect"
+    $FunctionName 	"Reflect"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 Reflect(const vec2 I, const vec2 N)
+{
+    return reflect(I, N, eta);
+}
+
+/*
+    $Title			"Refract"
+    $FunctionName 	"Refract"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 Refract(const vec2 I, const vec2 N, float eta)
+{
+    return refract(I, N, eta);
+}
+
+/*
+    $Title			"Normalize"
+    $FunctionName 	"Normalize"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 Normalize(const vec2 a)
+{
+    return normalize(a);
+}
+
+/*
+    $Title			"Split"
+    $FunctionName 	"Split"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+void Split(const vec2 in, out float x, out float y)
+{
+    x = in.x;
+    y = in.y;
+}
+
+
+/*
+    $Title			"Combine"
+    $FunctionName 	"Combine"
+    $SubSection 	"Math/Float2"
+    $ShowInUi 		"true"
+*/
+vec2 Combine( float x, float y )
+{
+    vec2 result = vec2( x, y );
+    return result;
+}
+

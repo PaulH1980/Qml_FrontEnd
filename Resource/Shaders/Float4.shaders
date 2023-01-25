@@ -1,0 +1,465 @@
+
+
+/*
+    $Title			"Plus"
+    $FunctionName 	"Plus"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Plus(const vec4 a, const vec4 b)
+{
+    return a + b;
+}
+
+/*
+    $Title			"Minus"
+    $FunctionName 	"Minus"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Minus(const vec4 a, const vec4 b)
+{
+    return a - b;
+}
+
+/*
+    $Title			"Multiply"
+    $FunctionName 	"Multiply"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Multiply(const vec4 a, const vec4 b)
+{
+    return a * b;
+}
+
+/*
+    $Title			"Divide"
+    $FunctionName 	"Divide"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Divide(const vec4 a, const vec4 b)
+{
+    return a / b;
+}
+
+/*
+    $Title			"Modulo"
+    $FunctionName 	"Modulo"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Modulo(const vec4 a, const vec4 b)
+{
+    return x - y * floor(x / y);
+}
+
+/*
+    $Title			"Sqrt"
+    $FunctionName 	"Sqrt"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Sqrt(const vec4 a)
+{
+    return sqrt(a);
+}
+
+/*
+    $Title			"InvSqrt"
+    $FunctionName 	"InvSqrt"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 InvSqrt(const vec4 a)
+{
+    return inversesqrt(a);
+}
+
+/*
+    $Title			"Abs"
+    $FunctionName 	"Abs"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Abs(const vec4 a)
+{
+    return abs(a);
+}
+
+/*
+    $Title			"Floor"
+    $FunctionName 	"Floor"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Floor(const vec4 a)
+{
+    return floor(a);
+}
+
+/*
+    $Title			"Ceil"
+    $FunctionName 	"Ceil"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Ceil(const vec4 a)
+{
+    return ceil(a);
+}
+
+
+/*
+    $Title			"Sign"
+    $FunctionName 	"Sign"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Sign(const vec4 a)
+{
+    return sign(a);
+}
+
+/*
+    $Title			"Fract"
+    $FunctionName 	"Fract"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Fract(const vec4 a)
+{
+    return fract(a);
+}
+
+
+/*
+    $Title			"Min"
+    $FunctionName 	"Min"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Min(const vec4 a, const vec4 b)
+{
+    return min(a, b);
+}
+
+/*
+    $Title			"Max"
+    $FunctionName 	"Max"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Max(const vec4 a, const vec4 b)
+{
+    return max(a, b);
+}
+
+
+/*
+    $Title			"Step"
+    $FunctionName 	"Step"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Step(const vec4 a)
+{
+    return step(a);
+}
+
+/*
+    $Title			"SmoothStep"
+    $FunctionName 	"SmoothStep"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 SmoothStep(const vec4 a)
+{
+    return smoothstep(a);
+}
+
+/*
+    $Title			"Lerp"
+    $FunctionName 	"Lerp"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Lerp(const vec4 start, const vec4 end, const vec4 weight)
+{
+    return mix(start, end, weight);
+}
+
+/*
+    $Title			"Clamp"
+    $FunctionName 	"Clamp"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Clamp(const vec4 min, const vec4 max, const vec4 value)
+{
+    return clamp(value, min, max);
+}
+
+/*
+    $Title			"Cos"
+    $FunctionName 	"Cos"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Cos(const vec4 a)
+{
+    return cos(a);
+}
+
+/*
+    $Title			"Sin"
+    $FunctionName 	"Sin"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Sin(const vec4 a)
+{
+    return sin(a);
+}
+
+/*
+    $Title			"Tan"
+    $FunctionName 	"Tan"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Tan(const vec4 a)
+{
+    return tan(a);
+}
+
+/*
+    $Title			"ACos"
+    $FunctionName 	"ACos"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 ACos(const vec4 a)
+{
+    return acos(a);
+}
+
+/*
+    $Title			"ASin"
+    $FunctionName 	"ASin"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 ASin(const vec4 a)
+{
+    return asin(a);
+}
+
+/*
+    $Title			"ATan"
+    $FunctionName 	"ATan"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 ATan(const vec4 a, const vec4 b)
+{
+    return atan(a, b);
+}
+
+/*
+    $Title			"ToDegrees"
+    $FunctionName 	"ToDegrees"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 ToDegrees(const vec4 a)
+{
+    return degrees(a);
+}
+
+/*
+    $Title			"ToRadians"
+    $FunctionName 	"ToRadians"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 ToRadians(const vec4 a)
+{
+    return radians(a);
+}
+
+
+/*
+    $Title			"Pow"
+    $FunctionName 	"Pow"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Pow(const vec4 a, const vec4 b)
+{
+    return pow(a, b);
+}
+
+/*
+    $Title			"Pow2"
+    $FunctionName 	"Pow2"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Pow2(const vec4 a)
+{
+    return pow2(a);
+}
+
+/*
+    $Title			"Log"
+    $FunctionName 	"Log"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Log(const vec4 a, const vec4 b)
+{
+    return log(a, b);
+}
+
+/*
+    $Title			"Log2"
+    $FunctionName 	"Log2"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Log2(const vec4 a)
+{
+    return log2(a);
+}
+
+/*
+    $Title			"Exp"
+    $FunctionName 	"Exp"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Exp(const vec4 a)
+{
+    return exp(a);
+}
+
+/*
+    $Title			"Exp2"
+    $FunctionName 	"Exp2"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Exp2(const vec4 a)
+{
+    return exp2(a);
+}
+
+/*
+    $Title			"Distance"
+    $FunctionName 	"Distance"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+float Distance(const vec4 a, const vec4 b)
+{
+    return distance(a, b);
+}
+
+/*
+    $Title			"Length"
+    $FunctionName 	"Length"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+float Length(const vec4 a)
+{
+    return length(a);
+}
+
+/*
+    $Title			"Normalize"
+    $FunctionName 	"Normalize"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Normalize(const vec4 a)
+{
+    return normalize(a);
+}
+
+/*
+    $Title			"Dot"
+    $FunctionName 	"Dot"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+float Dot(const vec4 a, const vec4 b)
+{
+    return dot(a, b);
+}
+
+/*
+    $Title			"FaceForward"
+    $FunctionName 	"FaceForward"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 FaceForward(const vec4 N, const vec4 I, const vec4 NRef)
+{
+    return faceforward(N, I, NRef);
+}
+
+/*
+    $Title			"Reflect"
+    $FunctionName 	"Reflect"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Reflect(const vec4 I, const vec4 N)
+{
+    return reflect(I, N, eta);
+}
+
+/*
+    $Title			"Refract"
+    $FunctionName 	"Refract"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Refract(const vec4 I, const vec4 N, float eta)
+{
+    return refract(I, N, eta);
+}
+
+
+/*
+    $Title			"Split"
+    $FunctionName 	"Split"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+void Split(const vec4 in, out float x, out float y, out float z, out float w )
+{
+    x = in.x;
+    y = in.y;
+    z = in.z;
+    w = in.w;
+}
+
+/*
+    $Title			"Combine"
+    $FunctionName 	"Combine"
+    $SubSection 	"Math/Float4"
+    $ShowInUi 		"true"
+*/
+vec4 Combine( float x, float y, float z, float w )
+{
+    vec4 result = vec4( x, y, z, w );
+    return result;
+}
+
+
+
+

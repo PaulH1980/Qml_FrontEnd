@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{7DCB9843-E71E-4B8D-AFBA-0B65ABB7ED83}</ProjectGuid>
+    <RootNamespace>Application</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Solution.props" />
+    <Import Project="Application.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Solution.props" />
+    <Import Project="Application.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Solution.props" />
+    <Import Project="Application.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\Solution.props" />
+    <Import Project="Application.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(QTDIR)\include\;$(GlobalIncludeDirectory);$(ProjectRootDirectory);.\GeneratedFiles</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>false</OpenMPSupport>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions);NOMINMAX;WIN32_LEAN_AND_MEAN;_SILENCE_CXX17_ALLOCATOR_VOID_DEPRECATION_WARNING;_ENABLE_EXTENDED_ALIGNED_STORAGE</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(SharedLibraryReference);$(ProjectRootDirectory)\libs\3rdparty\opengl\debug;$(ProjectRootDirectory)\libs\3rdparty\assimp\debug;$(ProjectRootDirectory)\libs\3rdparty\bullet\debug;$(ProjectRootDirectory)\libs\3rdparty\freetype\debug;$(ProjectRootDirectory)\libs\3rdparty\freeglut\debug;$(ProjectRootDirectory)\libs\3rdparty\chaiscript\debug;$(ProjectRootDirectory)\libs\3rdparty\boost\debug;$(ProjectRootDirectory)\libs\3rdparty\zstd\debug;$(ProjectRootDirectory)\libs\3rdparty\pzstd\debug;$(ProjectRootDirectory)\libs\3rdparty\fmt\debug;$(ProjectRootDirectory)\libs\3rdparty\rttr\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Qt5OpenGLd.lib;Qt5Cored.lib;Qt5Widgetsd.lib;Qt53DCored.lib;Qt5WebSocketsd.lib;Qt5Guid.lib;qtmaind.lib;Qt5Qmld.lib;Qt5Quickd.lib;Qt5QuickWidgetsd.lib;Qt5QuickControls2d.lib;Qt53DQuickd.lib;Qt53DQuickExtrasd.lib;Qt53DQuickInputd.lib;Qt53DQuickRenderd.lib;Qt53DQuickScene2D.lib;Qt53DQuickAnimationd.lib;Qt53DLogicd.lib;Qt53DRenderd.lib;IO.lib;Common.lib;Commands.lib;Input.lib;Flow.lib;Console.lib;Physics.lib;Components.lib;Font.lib;Graphics.lib;Math.lib;Properties.lib;Resource.lib;Scene.lib;Render.lib;Audio.lib;Profiler.lib;Engine.lib;freetyped.lib;Opengl32.lib;freeglut_staticd.lib;freeglutd.lib;libglew32d.lib;assimp-vc140-mt.lib;Bullet3Collision_Debug.lib;Bullet3Common_Debug.lib;Bullet3Dynamics_Debug.lib;Bullet3Geometry_Debug.lib;ConvexDecomposition_Debug.lib;LinearMath_Debug.lib;BulletCollision_Debug.lib;BulletDynamics_Debug.lib;BulletInverseDynamics_Debug.lib;BulletInverseDynamicsUtils_Debug.lib;BulletSoftBody_Debug.lib;chaiscript_stdlib-6.1.0.lib;ScriptEngine.lib;parser.lib;stdlib.lib;stl_extra.lib;zstd_static.lib;%(AdditionalDependencies);libpzstd_static.lib;fmtd.lib;librttr_core_d.lib</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>Del "$(DataDirectory)Qml" /Q
+Del "$(DataDirectory)Qml/Scripts" /Q
+XCopy "$(QmlSourceDirectory)"  "$(DataDirectory)Qml"  /E /H /Y /Q
+
+Del "$(DataDirectory)Resource" /Q
+XCopy "$(AppResourceDirectory)"  "$(DataDirectory)Resource"  /E /H /Y /Q
+
+Del "$(DataDirectory)Shader" /Q
+XCopy "$(AppShaderDirectory)"  "$(DataDirectory)Shader"  /E /H /Y /Q
+
+Del $(UnitTestDataDirectory)Resource" /Q
+Del "$(UnitTestDataDirectory)Shader" /Q
+
+XCopy "$(AppShaderDirectory)"  "$(UnitTestDataDirectory)Shader"  /E /H /Y /Q
+XCopy "$(AppResourceDirectory)"  "$(UnitTestDataDirectory)Resource"  /E /H /Y /Q</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>Copying QML Files To Executable Directory</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(QTDIR)\include\;$(GlobalIncludeDirectory);$(ProjectRootDirectory);.\GeneratedFiles</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>false</OpenMPSupport>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(SharedLibraryReference);$(ProjectRootDirectory)\libs\3rdparty\opengl\release;$(ProjectRootDirectory)\libs\3rdparty\assimp\release;$(ProjectRootDirectory)\libs\3rdparty\bullet\release;$(ProjectRootDirectory)\libs\3rdparty\freetype\release;$(ProjectRootDirectory)\libs\3rdparty\freeglut\release;$(ProjectRootDirectory)\libs\3rdparty\boost\release;$(ProjectRootDirectory)\libs\3rdparty\zstd\release;$(ProjectRootDirectory)\libs\3rdparty\pzstd\release;$(ProjectRootDirectory)\libs\3rdparty\fmt\release</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Qt5OpenGL.lib;Qt5Core.lib;Qt5Widgets.lib;Qt53DCore.lib;Qt5WebSockets.lib;Qt5Gui.lib;qtmain.lib;Qt5Qml.lib;Qt5Quick.lib;Qt5QuickWidgets.lib;Qt5QuickControls2.lib;IO.lib;Common.lib;Commands.lib;Input.lib;Console.lib;Physics.lib;Components.lib;Font.lib;Graphics.lib;Math.lib;Properties.lib;Resource.lib;Scene.lib;Render.lib;Audio.lib;Profiler.lib;Engine.lib;freetype.lib;Opengl32.lib;freeglut_static.lib;freeglut.lib;libglew32.lib;assimp-vc140-mt.lib;Bullet3Collision.lib;Bullet3Common.lib;Bullet3Dynamics.lib;Bullet3Geometry.lib;ConvexDecomposition.lib;LinearMath.lib;BulletCollision.lib;BulletDynamics.lib;BulletInverseDynamics.lib;BulletInverseDynamicsUtils.lib;BulletSoftBody.lib;zstd_static.lib;%(AdditionalDependencies);libpzstd_static.lib;fmt.lib</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>Del "$(DataDirectory)Qml" /Q
+Del "$(DataDirectory)Qml/Scripts" /Q
+XCopy "$(QmlSourceDirectory)"  "$(DataDirectory)Qml"  /E /H /Y /Q
+XCopy "$(QmlSourceDirectory)"  "$(DataDirectory)Qml/Scripts"  /E /H /Y /Q</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>Copying QML Files To Executable Directory</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ApplicationInteraction.cpp" />
+    <ClCompile Include="EngineObjectProxy.cpp" />
+    <ClCompile Include="FboRenderer.cpp" />
+    <ClCompile Include="gen\moc_AppQtRoles.cpp" />
+    <ClCompile Include="gen\moc_AppRegisterFlowNodes.cpp" />
+    <ClCompile Include="gen\moc_EngineObjectProxy.cpp" />
+    <ClCompile Include="gen\moc_FboRenderer.cpp" />
+    <ClCompile Include="gen\moc_MainApplication.cpp" />
+    <ClCompile Include="gen\moc_MainFrame.cpp" />
+    <ClCompile Include="gen\moc_ObjectPropertyModel.cpp" />
+    <ClCompile Include="gen\moc_QFlowCanvas.cpp" />
+    <ClCompile Include="gen\moc_QFlowNode.cpp" />
+    <ClCompile Include="gen\moc_QmlGlobal.cpp" />
+    <ClCompile Include="gen\moc_QmlImageProvider.cpp" />
+    <ClCompile Include="gen\moc_QmlProperty.cpp" />
+    <ClCompile Include="gen\moc_QmlPropertyBase.cpp" />
+    <ClCompile Include="gen\moc_QmlTreeViewModel.cpp" />
+    <ClCompile Include="gen\moc_QmlTreeViewNodeBase.cpp" />
+    <ClCompile Include="gen\moc_UuidGen.cpp" />
+    <ClCompile Include="ObjectPropertyModel.cpp" />
+    <ClCompile Include="AppQtRoles.cpp" />
+    <ClCompile Include="ClientEntity.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MainApplication.cpp" />
+    <ClCompile Include="MainFrame.cpp" />
+    <ClCompile Include="QFlowNode.cpp" />
+    <ClCompile Include="QmlGlobal.cpp" />
+    <ClCompile Include="QmlImageProvider.cpp" />
+    <ClCompile Include="QmlContextMenuResolver.cpp" />
+    <ClCompile Include="QmlLogRecipient.cpp" />
+    <ClCompile Include="QmlMainMenu.cpp" />
+    <ClCompile Include="QmlProperty.cpp" />
+    <ClCompile Include="UuidGen.cpp" />
+    <ClInclude Include="AppRegisterFlowNodes.hpp" />
+    <ClInclude Include="AppTestScene.h" />
+    <ClInclude Include="ClientEntityFwd.h" />
+    <ClInclude Include="DescribeObjects.h" />
+    <ClInclude Include="FboRenderer.hpp" />
+    <ClInclude Include="IFileDialogs.h" />
+    <ClInclude Include="PropertyGenerator.h" />
+    <ClInclude Include="QmlGlobal.hpp" />
+    <ClInclude Include="QmlImageProvider.hpp" />
+    <ClInclude Include="QmlContextMenuResolver.h" />
+    <ClInclude Include="QmlMainMenu.h" />
+    <ClInclude Include="QmlProperty.hpp" />
+    <ClCompile Include="QmlPropertyBase.cpp" />
+    <ClCompile Include="QmlPropertyResolver.cpp" />
+    <ClCompile Include="QmlTreeViewNodeBase.cpp" />
+    <ClCompile Include="QmlTreeViewModel.cpp" />
+    <ClCompile Include="QmlTreeViewNodeResolver.cpp" />
+    <ClInclude Include="Shader\Generated\ShaderShared.h" />
+    <ClInclude Include="UuidGen.hpp" />
+    <None Include="Qml\DefaultButton.qml" />
+    <None Include="Qml\FlowButton.qml" />
+    <None Include="Qml\FlowOutputNodeBase.qml" />
+    <None Include="Qml\FlowPixShaderOutputNode.qml" />
+    <None Include="Qml\LabelCheckBoxInput.qml" />
+    <None Include="Qml\LabelComboBoxInput.qml" />
+    <None Include="Qml\MeshNode.qml" />
+    <None Include="Qml\RenderPassShaderNode.qml" />
+    <None Include="Qml\ResourceDragItem.qml" />
+    <None Include="Qml\TechniqueNode.qml" />
+    <None Include="Qml\UniformInputNode.qml" />
+    <None Include="Qml\UniformType.qml" />
+    <None Include="Qml\VecfWidget.qml" />
+    <None Include="Qml\ColorSlider.qml" />
+    <None Include="Qml\DefaultButton2.qml" />
+    <None Include="Qml\DefaultTextField.qml">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="Qml\FlowColorPreviewRect.qml" />
+    <None Include="Qml\FlowComponent.qml" />
+    <None Include="Qml\FlowConnectionBase.qml" />
+    <None Include="Qml\FlowConstValueNode.qml" />
+    <None Include="Qml\FlowDynamicMenu.qml" />
+    <None Include="Qml\FlowEqualsNode.qml" />
+    <None Include="Qml\FlowGEqualsNode.qml" />
+    <None Include="Qml\FlowGreaterNode.qml" />
+    <None Include="Qml\FlowIfElseNode.qml" />
+    <None Include="Qml\FlowImageConstantNode.qml" />
+    <None Include="Qml\FlowPreviewImage.qml" />
+    <None Include="Qml\FlowInputNodeBase.qml" />
+    <None Include="Qml\FlowNodeBase.qml" />
+    <None Include="Qml\FlowNotEqualNode.qml" />
+    <None Include="Qml\FlowPreviewSelectionItem.qml" />
+    <None Include="Qml\FlowPropertyGrid.qml" />
+    <None Include="Qml\FlowSelectionWidget.qml" />
+    <None Include="Qml\FlowPortBaseIn.qml" />
+    <None Include="Qml\FlowPortBaseOut.qml" />
+    <None Include="Qml\FlowPortInternal.qml" />
+    <None Include="Qml\FlowRenderControl.qml" />
+    <None Include="Qml\FlowSmallerNode.qml" />
+    <None Include="Qml\AppGlobal.qml" />
+    <None Include="Qml\GradientWidget.qml" />
+    <None Include="Qml\MainMenuBar.qml" />
+    <None Include="Qml\MainPanel.qml" />
+    <None Include="Qml\PropertyGridFloatSlider.qml" />
+    <None Include="Qml\PropertyGridIntSlider.qml" />
+    <None Include="Qml\ResourceBrowser.qml" />
+    <None Include="Qml\ResourceBrowserItem.qml" />
+    <None Include="Qml\ImageComponent.qml" />
+    <None Include="Qml\OptionScreen.qml" />
+    <None Include="Qml\PropertyGridLoader.qml" />
+    <None Include="Qml\ResourceComboBox.qml" />
+    <None Include="Qml\ResourceToolBar.qml" />
+    <None Include="Qml\ScenePropertyGrid.qml" />
+    <None Include="Qml\Scripts\AppScripts.js" />
+    <None Include="Qml\Scripts\FlowScripts.js" />
+    <None Include="Qml\ShaderBlockNodeBase.qml" />
+    <None Include="Qml\ToolBarButton.qml" />
+    <None Include="Qml\TreeItemQc2.qml" />
+    <None Include="Qml\TreeViewQc2.qml" />
+    <None Include="Qml\VeciWidget.qml" />
+    <None Include="Qml\VertexAttribute.qml" />
+    <None Include="Qml\VertexAttributeNode.qml" />
+    <None Include="Qml\VertexAttributeType.qml" />
+    <None Include="Qml\VertexShaderInNode.qml" />
+    <None Include="Qml\VertexShaderNode.qml" />
+    <None Include="Resource\DefaultResources\BaseMaterials.resource" />
+    <None Include="Resource\DefaultResources\Drawpass.resource" />
+    <None Include="Resource\DefaultResources\EditorTextures.resource" />
+    <None Include="Resource\DefaultResources\Fonts.resource" />
+    <None Include="Resource\DefaultResources\GpuStateResources.resource" />
+    <None Include="Resource\DefaultResources\GpuUniformBuffers.resource" />
+    <None Include="Resource\DefaultResources\Meshes.resource" />
+    <None Include="Resource\DefaultResources\Shaders.resource" />
+    <None Include="Resource\DefaultResources\Techniques.resource" />
+    <None Include="Resource\Descriptors\GpuStateDescriptors.desc" />
+    <None Include="Resource\Descriptors\OpenGLConstants.desc" />
+    <None Include="Resource\Descriptors\RenderPassDescriptor.desc" />
+    <None Include="Resource\Descriptors\ShaderInputDescriptors.desc" />
+    <None Include="Resource\Scripts\AddCube.vscr" />
+    <None Include="Resource\Scripts\Main.vscr" />
+    <None Include="Resource\Shaders\Float1.shaders" />
+    <None Include="Resource\Shaders\Float2.shaders" />
+    <None Include="Resource\Shaders\Float3.shaders" />
+    <None Include="Resource\Shaders\Float4.shaders" />
+    <None Include="Resource\Shaders\Matrix.shaders" />
+    <None Include="Resource\Shaders\MiscMath.shaders" />
+    <None Include="Resource\Shaders\UniformBuffers.glsl" />
+    <None Include="Shader\Brdf.glsl" />
+    <None Include="Shader\BrushShader.frag" />
+    <None Include="Shader\BrushShader.vert" />
+    <None Include="Shader\DefaultShader.frag" />
+    <None Include="Shader\DefaultShader.vert" />
+    <None Include="Shader\DefaultShader2d.frag" />
+    <None Include="Shader\DefaultShader2d.vert" />
+    <None Include="Shader\DefaultVertexFormat.glsl" />
+    <None Include="Shader\FragShaderInput.glsl" />
+    <None Include="Shader\FunctionDefinitions.func" />
+    <None Include="Shader\global.glsl" />
+    <None Include="Shader\GradientBrushShader.frag" />
+    <None Include="Shader\IconShader.frag" />
+    <None Include="Shader\IconShader.vert" />
+    <None Include="Shader\Irradiance.frag" />
+    <None Include="Shader\Irradiance.glsl" />
+    <None Include="Shader\Irradiance.vert" />
+    <None Include="Shader\LassoShader.vert" />
+    <None Include="Shader\lightbuffer.glsl" />
+    <None Include="Shader\LineGeomSmooth.glsl" />
+    <None Include="Shader\LineShader.frag" />
+    <None Include="Shader\LineShader.geom" />
+    <None Include="Shader\LineShader.vert" />
+    <None Include="Shader\LineShaderGeom.frag" />
+    <None Include="Shader\LineSmooth.geom" />
+    <None Include="Shader\LineSmooth.vert" />
+    <None Include="Shader\MeshShader.frag" />
+    <None Include="Shader\MeshShader.vert" />
+    <None Include="Shader\ObjectTransform.glsl" />
+    <None Include="Shader\octahedron.glsl" />
+    <None Include="Shader\OriginAxis.frag" />
+    <None Include="Shader\OriginAxis.vert" />
+    <None Include="Shader\polystiple.glsl" />
+    <None Include="Shader\Quake3.frag" />
+    <None Include="Shader\Quake3.vert" />
+    <None Include="Shader\Rayleigh.frag" />
+    <None Include="Shader\Rayleigh.glsl" />
+    <None Include="Shader\Rayleigh.vert" />
+    <None Include="Shader\RayMarch.frag" />
+    <None Include="Shader\RayMarch.vert" />
+    <None Include="Shader\SelectedMesh.frag" />
+    <None Include="Shader\SelectedMesh.vert" />
+    <None Include="Shader\SelectionShader.frag" />
+    <None Include="Shader\SelectionShader.vert" />
+    <None Include="Shader\ShadowMap.frag" />
+    <None Include="Shader\ShadowMap.vert" />
+    <None Include="Shader\StyleBrush.frag" />
+    <None Include="Shader\Test.comp" />
+    <None Include="Shader\TexturedBrushShader.frag" />
+    <None Include="Shader\WireframeShader.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppException.h" />
+    <ClInclude Include="AppIncludes.h" />
+    <ClInclude Include="ApplicationBindings.h" />
+    <ClInclude Include="ApplicationInteraction.h" />
+    <ClInclude Include="ApplicationInteractionFwd.h" />
+    <ClInclude Include="ApplicationInteractionPtr.h" />
+    <ClInclude Include="ObjectPropertyModel.hpp" />
+    <ClInclude Include="AppQtRoles.hpp" />
+    <ClInclude Include="ClientEntity.h" />
+    <ClInclude Include="MainApplication.hpp" />
+    <ClInclude Include="MainFrame.hpp" />
+    <ClInclude Include="QmlLogRecipient.h" />
+    <ClInclude Include="QmlPropertyBase.hpp" />
+    <ClInclude Include="QmlPropertyBasePtr.h" />
+    <ClInclude Include="QmlPropertyResolver.h" />
+    <ClInclude Include="QmlPropertyVector.h" />
+    <ClInclude Include="QmlTreeViewNodeResolver.h" />
+    <ClInclude Include="QmlTreeViewNodeBase.hpp" />
+    <ClInclude Include="EngineObjectProxy.hpp" />
+    <None Include="Qml\ColorWidget.qml">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="Qml\DefaultLabel.qml">
+      <FileType>Document</FileType>
+    </None>
+    <ClInclude Include="Qml\FloatInput.qml" />
+    <None Include="Qml\FlowRenderCanvas.qml">
+      <FileType>CppHeader</FileType>
+    </None>
+    <ClInclude Include="Qml\FlowWidgetMain.qml" />
+    <ClInclude Include="Qml\FlowToolBar.qml" />
+    <ClInclude Include="Qml\LabelFloatInput.qml" />
+    <ClInclude Include="Qml\MainViewTabBar.qml" />
+    <ClInclude Include="Qml\PropertyGridName.qml" />
+    <ClInclude Include="Qml\RectContainer.qml" />
+    <ClInclude Include="Qml\SelectFileWidget.qml" />
+    <ClInclude Include="QtHeaders.h" />
+    <ClInclude Include="QmlTreeViewModel.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Audio\Audio.vcxproj">
+      <Project>{7def99b2-1511-46c8-a812-6ce9583d3304}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Commands\Commands.vcxproj">
+      <Project>{843a74b5-59d5-4ce8-ac61-1ba981ae705c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.vcxproj">
+      <Project>{b31ac96e-8c79-41e0-b37e-1ebb7260938d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Components\Components.vcxproj">
+      <Project>{d46a16e9-6258-4e33-a32f-b6bce34846ba}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Console\Console.vcxproj">
+      <Project>{c13ed1f6-0a0c-40db-816e-e177aa097d04}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Engine\Engine.vcxproj">
+      <Project>{12630c1a-deb8-4697-a9c9-94a1ca0473de}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Flow\Flow.vcxproj">
+      <Project>{daf0c1da-e6a2-4ddf-bbcd-ef8e03491422}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Font\Font.vcxproj">
+      <Project>{de2a24bc-3fd9-498c-a9c4-2aa25af637ff}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Graphics\Graphics.vcxproj">
+      <Project>{d66032d5-ea2d-49d6-81bb-4713679f7746}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Input\Input.vcxproj">
+      <Project>{c13573a8-2134-49e4-baa6-628dfe43fdfe}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\IO\IO.vcxproj">
+      <Project>{5166b7b6-98f0-4baa-9112-2bcb8bcf376e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Math\Math.vcxproj">
+      <Project>{adba7eda-ba6e-4bfd-a6f7-38f87387b691}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Physics\Physics.vcxproj">
+      <Project>{c2a6af45-0179-43e9-8433-dd76c2940352}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Profiler\Profiler.vcxproj">
+      <Project>{4dd7e73e-05a6-4394-bfbe-872ccd2e9029}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Properties\Properties.vcxproj">
+      <Project>{16f6d37b-c9ea-4250-9689-9a6a08d3af9c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Render\Render.vcxproj">
+      <Project>{292d486e-9401-4b08-8747-e656194c031e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Resource\Resource.vcxproj">
+      <Project>{1d8959ec-521e-483d-ab6d-92e460d53607}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Scene\Scene.vcxproj">
+      <Project>{2591b782-ebf8-43f7-823f-88313a0e68fe}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ScriptEngine\ScriptEngine.vcxproj">
+      <Project>{47f78c0b-3528-453d-8dd8-658b4f8e327e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.vcxproj">
+      <Project>{48277e43-43d0-44a6-9ad6-8acf31bf217b}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Qml\AutoComplete.qml">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <None Include="Qml\DynamicMenu.qml" />
+    <None Include="Qml\LabelIntegerInput.qml" />
+    <None Include="Qml\CenterPanel.qml" />
+    <None Include="Qml\IntegerInput.qml" />
+    <None Include="Qml\PropertyGridColor.qml" />
+    <None Include="Qml\ColorWheel.qml" />
+    <None Include="Qml\Console.qml" />
+    <None Include="Qml\ConsolePopup.qml" />
+    <None Include="Qml\CustomToolTip.qml" />
+    <None Include="Qml\FloatTextInput.qml" />
+    <None Include="Qml\FontAwesome.qml" />
+    <None Include="Qml\LeftSidePanel.qml" />
+    <None Include="Qml\main.qml" />
+    <None Include="Qml\Object.qml" />
+    <None Include="Qml\ProgBar.qml" />
+    <None Include="Qml\PropertyFlags.qml" />
+    <None Include="Qml\PropertyGrid.qml" />
+    <None Include="Qml\PropertyGridItemBase.qml" />
+    <None Include="Qml\PropertyGridSection.qml" />
+    <None Include="Qml\PropertyGridBool.qml" />
+    <None Include="Qml\PropertyGridEnum.qml" />
+    <None Include="Qml\PropertyGridFloat.qml" />
+    <None Include="Qml\PropertyGridInt.qml" />
+    <None Include="Qml\PropertyGridPlaceHolder.qml" />
+    <None Include="Qml\PropertyGridFile.qml" />
+    <None Include="Qml\PropertyGridVector2i.qml" />
+    <None Include="Qml\PropertyGridVector3i.qml" />
+    <None Include="Qml\PropertyGridVector4i.qml" />
+    <None Include="Qml\PropGridSlider.qml" />
+    <None Include="Qml\PropertyGridImage.qml" />
+    <None Include="Qml\PropertyGridText.qml" />
+    <None Include="Qml\qmldir" />
+    <None Include="Qml\RightSidePanel.qml" />
+    <None Include="Qml\RoundRect.qml" />
+    <None Include="Qml\SceneToolBar.qml" />
+    <None Include="Qml\SceneTreeItem.qml" />
+    <None Include="Qml\SceneTreeView.qml" />
+    <None Include="Qml\SceneRenderItem.qml" />
+    <None Include="Qml\SearchBar.qml" />
+    <None Include="Qml\Style.qml" />
+    <None Include="Qml\PropertyGridVector2f.qml" />
+    <None Include="Qml\PropertyGridVector3f.qml" />
+    <None Include="Qml\PropertyGridVector4f.qml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Qml\ResourceDialog.qml">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Qml\ComboBoxInput.qml" />
+    <Text Include="Qml\FlowColorConstantNode.qml" />
+    <Text Include="Qml\FlowConfig.qml" />
+    <Text Include="Qml\FlowLEqualsNode.qml" />
+    <Text Include="Qml\FlowNodesDesc.qml" />
+    <Text Include="Qml\FooterStatusBar.qml" />
+    <Text Include="Qml\HeaderToolBar.qml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shader\Test.compute">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

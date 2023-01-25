@@ -1,0 +1,390 @@
+{
+    "ShaderInputDescriptors" : 
+    [
+    {
+      "Annotations": {
+        "$Name"       : "Bool",
+        "$ShowInUi"   : "true",
+        "$SubSection" : "Input/Create",
+        "$Title"      : "Bool"
+      },      
+      "FlowNodeType": "ShaderBlock",   
+      "ReturnType": "bool",
+      "InputDescriptor": [
+        {
+          "Type": "bool",
+          "Name": "Value",
+          "Value": false,
+          "LabelWidth": 48,
+          "DefaultValue": false
+        }
+      ]
+    },
+    {
+      "Annotations": {
+        "$Name": "Float",
+        "$ShowInUi": "true",
+        "$SubSection": "Input/Create",
+        "$Title": "Float"
+      },
+      "FlowNodeType": "ShaderBlock",
+      "ReturnType": "float",
+      "InputDescriptor": [
+        {
+          "Type": "float",
+          "Name": "Value",
+          "LabelWidth": 48,
+          "Value": 0,
+          "DefaultValue": 0
+        }
+      ]
+    },
+    {
+      "Annotations": {
+        "$Name": "Float2",
+        "$ShowInUi": "true",
+        "$SubSection": "Input/Create",
+        "$Title": "Float2"
+      },
+      "FlowNodeType": "ShaderBlock",
+      "ReturnType": "vec2",
+      "InputDescriptor": [
+        {
+          "Type": "float",
+          "Name": "X",
+          "LabelWidth" :  24,
+          "Value": 0,
+          "DefaultValue": 0
+        },
+        {
+          "Type": "float",
+          "Name": "Y",
+          "LabelWidth": 24,
+          "Value": 0,
+          "DefaultValue": 0
+        }
+      ]
+    },
+    {
+      "Annotations": {
+        "$Name": "Float3",
+        "$ShowInUi": "true",
+        "$SubSection": "Input/Create",
+        "$Title": "Float3"
+      },
+      "FlowNodeType": "ShaderBlock",
+      "ReturnType": "vec3",
+      "InputDescriptor": [
+        {
+          "Type": "float",
+          "Name": "X",
+          "LabelWidth": 24,
+          "Value": 0,
+          "DefaultValue": 0
+        },
+        {
+          "Type": "float",
+          "Name": "Y",
+          "LabelWidth": 24,
+          "Value": 0,
+          "DefaultValue": 0
+        },
+        {
+          "Type": "float",
+          "Name": "Z",
+          "LabelWidth": 24,
+          "Value": 0,
+          "DefaultValue": 0
+        }
+      ]
+    },
+    {
+      "Annotations": {
+        "$Name": "Float4",
+        "$ShowInUi": "true",
+        "$SubSection": "Input/Create",
+        "$Title": "Float4"
+      },
+      "FlowNodeType": "ShaderBlock",
+      "ReturnType": "vec4",
+      "InputDescriptor": [
+        {
+          "Type": "float",
+          "Name": "X",
+          "LabelWidth": 24,
+          "Value": 0,
+          "DefaultValue": 0
+        },
+        {
+          "Type": "float",
+          "Name": "Y",
+          "LabelWidth": 24,
+          "Value": 0,
+          "DefaultValue": 0
+        },
+        {
+          "Type": "float",
+          "Name": "Z",
+          "LabelWidth": 24,
+          "Value": 0,
+          "DefaultValue": 0
+        },
+        {
+          "Type": "float",
+          "Name": "W",
+          "LabelWidth": 24,
+          "Value": 1,
+          "DefaultValue": 1
+        }
+      ]
+    },
+    {
+      "Annotations": {
+        "$Name": "Int",
+        "$ShowInUi": "true",
+        "$SubSection": "Input/Create",
+        "$Title": "Int"
+      },
+      "FlowNodeType": "ShaderBlock",     
+      "ReturnType": "int",
+      "InputDescriptor": [
+        {
+          "Type": "int",
+          "Name": "Value",
+          "LabelWidth": 48,
+          "Value": 0,
+          "DefaultValue": 0
+        }
+      ]
+    },
+    {
+      "Annotations": {
+        "$Name": "Int2",
+        "$ShowInUi": "true",
+        "$SubSection": "Input/Create",
+        "$Title": "Int2"
+      },
+      "FlowNodeType": "ShaderBlock",   
+      "ReturnType": "ivec2",
+      "InputDescriptor": [
+        {
+          "Type": "int",
+          "Name": "X",
+          "LabelWidth": 24,
+          "Value": 0,
+          "DefaultValue": 0
+        },
+        {
+          "Type": "int",
+          "Name": "Y",
+          "LabelWidth": 24,
+          "Value": 0,
+          "DefaultValue": 0
+        }
+      ]
+    },
+    {
+      "Annotations": {
+        "$Name": "Int3",
+        "$ShowInUi": "true",
+        "$SubSection": "Input/Create",
+        "$Title": "Int3"
+      },
+      "FlowNodeType": "ShaderBlock",     
+      "ReturnType": "ivec3",
+      "InputDescriptor": [
+        {
+          "Type": "int",
+          "Name": "X",
+          "LabelWidth": 24,
+          "Value": 0,
+          "DefaultValue": 0
+        },
+        {
+          "Type": "int",
+          "Name": "Y",
+          "LabelWidth": 24,
+          "Value": 0,
+          "DefaultValue": 0
+        },
+        {
+          "Type": "int",
+          "Name": "Z",
+          "LabelWidth": 24,
+          "Value": 0,
+          "DefaultValue": 0
+        }
+      ]
+    },
+    {
+      "Annotations": {
+        "$Name": "Int4",
+        "$ShowInUi": "true",
+        "$SubSection": "Input/Create",
+        "$Title": "Int4"
+      },
+      "FlowNodeType": "ShaderBlock",     
+      "ReturnType": "ivec4",
+      "InputDescriptor": [
+        {
+          "Type": "int",
+          "Name": "X",
+          "LabelWidth": 24,
+          "Value": 0,
+          "DefaultValue": 0
+        },
+        {
+          "Type": "int",
+          "Name": "Y",
+          "LabelWidth": 24,
+          "Value": 0,
+          "DefaultValue": 0
+        },
+        {
+          "Type": "int",
+          "Name": "Z",
+          "LabelWidth": 24,
+          "Value": 0,
+          "DefaultValue": 0
+        },
+        {
+          "Type": "int",
+          "Name": "W",
+          "LabelWidth": 24,
+          "Value": 0,
+          "DefaultValue": 0
+        }
+      ]
+    },
+    {
+      "Annotations": {
+        "$Name": "UInt",
+        "$ShowInUi": "true",
+        "$SubSection": "Input/Create",
+        "$Title": "UInt"
+      },
+      "FlowNodeType": "ShaderBlock",     
+      "ReturnType": "uint",
+      "InputDescriptor": [
+        {
+          "Type": "uint",
+          "Name": "Value",
+          "LabelWidth": 48,
+          "Value": 0,
+          "DefaultValue": 0,
+          "Min": 0
+        }
+      ]
+    },
+        {
+      "Annotations": {
+        "$Name": "UInt2",
+        "$ShowInUi": "true",
+        "$SubSection": "Input/Create",
+        "$Title": "UInt2"
+      },
+            "FlowNodeType" : "ShaderBlock",            
+            "ReturnType" : "uivec2",
+            "InputDescriptor" : 
+            [
+        {
+          "Type": "uint",
+          "Name": "X",
+          "LabelWidth": 24,
+          "Value": 0,
+          "DefaultValue": 0,
+          "Min": 0
+        },
+        {
+          "Type": "uint",
+          "Name": "Y",
+          "LabelWidth": 24,
+          "Value": 0,
+          "DefaultValue": 0,
+          "Min": 0
+        }
+            ]
+        },
+        {
+      "Annotations": {
+        "$Name": "UInt3",
+        "$ShowInUi": "true",
+        "$SubSection": "Input/Create",
+        "$Title": "UInt3"
+      },
+            "FlowNodeType" : "ShaderBlock",            
+            "ReturnType" : "uivec3",
+            "InputDescriptor" : 
+            [
+        {
+          "Type": "uint",
+          "Name": "X",
+          "LabelWidth": 24,
+          "Value": 0,
+          "DefaultValue": 0,
+          "Min": 0
+        },
+        {
+          "Type": "uint",
+          "Name": "Y",
+          "LabelWidth": 24,
+          "Value": 0,
+          "DefaultValue": 0,
+          "Min": 0
+        },
+        {
+          "Type": "uint",
+          "Name": "Z",
+          "LabelWidth": 24,
+          "Value": 0,
+          "DefaultValue": 0,
+          "Min": 0
+        }
+            ]
+        },
+    {
+      "Annotations": {
+        "$Name": "UInt4",
+        "$ShowInUi": "true",
+        "$SubSection": "Input/Create",
+        "$Title": "UInt4"
+      },
+      "FlowNodeType": "ShaderBlock",    
+      "ReturnType": "uivec4",
+      "InputDescriptor": [
+        {
+          "Type": "uint",
+          "Name": "X",
+          "LabelWidth": 24,
+          "Value": 0,
+          "DefaultValue": 0,
+          "Min": 0
+        },
+        {
+          "Type": "uint",
+          "Name": "Y",
+          "LabelWidth": 24,
+          "Value": 0,
+          "DefaultValue": 0,
+          "Min": 0
+        },
+        {
+          "Type": "uint",
+          "Name": "Z",
+          "LabelWidth": 24,
+          "Value": 0,
+          "DefaultValue": 0,
+          "Min": 0
+        },
+        {
+          "Type": "uint",
+          "Name": "W",
+          "LabelWidth": 24,
+          "Value": 0,
+          "DefaultValue": 0,
+          "Min": 0
+        }
+      ]
+    }
+    ]
+}

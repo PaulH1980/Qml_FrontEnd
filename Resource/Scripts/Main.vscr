@@ -1,0 +1,39 @@
+def CreateCylinder( )
+{
+    var entity = __EngineContext.getWorldEntity().createChild("CylinderEntity");
+    var transform = entity.getTransform();
+    transform.scale = Vector3f( 100, 100, 500 )
+	entity.setTransform( transform )
+	entity.printTest();
+}
+
+ def handleEvent(Event e)
+ {
+    puts("Hello Script Event Handler\n")        
+ } 
+
+
+class EventTest
+{
+    var evtHandlerId;
+
+    def RemoveHandler()
+    {
+        
+    }
+
+
+    def EventTest() {
+        var evtSystem       = __EngineContext.getSystem("EventSystem");
+        var evtHandler      = NewEventHandler("UPDATE_SCENE");
+        this.evtHandlerId   = evtHandler.getId();
+        evtHandler.bind( handleEvent );
+        evtSystem.addEventHandler( evtHandler );
+        puts( "evt handle id is " + to_string(this.evtHandlerId) );
+    }
+}
+
+EventTest();
+
+
+CreateCylinder()

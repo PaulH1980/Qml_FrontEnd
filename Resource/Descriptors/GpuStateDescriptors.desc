@@ -1,0 +1,580 @@
+{ 
+  "GpuStateDescriptors": [
+    {
+      "Annotations": {
+        "$Name"       : "DepthState",
+        "$ShowInUi"   : "true",
+        "$SubSection": "Input/GpuState",
+        "$PreferredWidth" :  224,
+        "$Title"      : "DepthState"
+      },
+      "FlowNodeType": "ClassBlock",
+      "ReturnType": "DepthState",
+      "InputDescriptor": [
+        {
+          "Type": "bool",
+          "Name": "DepthMask",
+          "Value": true,
+          "DefaultValue": true
+        },
+        {
+          "Type": "bool",
+          "Name": "DepthTest",
+          "Value": true,
+          "DefaultValue": true
+        },
+        {
+          "Type": "float",
+          "Name": "MinDepth",
+          "Value": 0,
+          "DefaultValue": 0
+        },
+        {
+          "Type": "float",
+          "Name": "MaxDepth",
+          "Value": 1,
+          "DefaultValue": 1
+        },
+        {
+          "Type": "StringEnum",
+          "Name": "DepthMode",
+          "Value": "LESS",
+          "DefaultValue": "LESS",
+          "Selection": [
+            "NEVER",
+            "LESS",
+            "LEQUAL",
+            "EQUAL",
+            "GEQUAL",
+            "GREATER",
+            "NOTEQUAL",
+            "ALWAYS"
+          ]
+        }
+      ]
+    },
+    {
+      "Annotations": {
+        "$Name": "StencilState",
+        "$ShowInUi": "true",
+        "$SubSection": "Input/GpuState",
+        "$PreferredWidth": 224,
+        "$Title": "StencilState"
+      },
+      "FlowNodeType": "ClassBlock",
+      "ReturnType": "StencilState",
+      "InputDescriptor": [
+        {
+          "Type": "bool",
+          "Name": "StencilEnabled",
+          "Value": false,
+          "DefaultValue": false
+        },
+        {
+          "Type": "uint",
+          "Name": "StencilMaskVal",
+          "Value": 255,
+          "DefaultValue": 255,
+          "Min": 0,
+          "Max": 255
+        },
+        {
+          "Type": "uint",
+          "Name": "StencilMaskFunc",
+          "Value": 255,
+          "DefaultValue": 255,
+          "Min": 0,
+          "Max": 255
+        },
+        {
+          "Type": "uint",
+          "Name": "StencilRefFunc",
+          "Value": 0,
+          "DefaultValue": 0,
+          "Min": 0,
+          "Max": 255
+        },
+        {
+          "Type": "StringEnum",
+          "Name": "StencilFunc",
+          "Value": "ALWAYS",
+          "DefaultValue": "ALWAYS",
+          "Selection": [
+            "NEVER",
+            "LESS",
+            "LEQUAL",
+            "EQUAL",
+            "GEQUAL",
+            "GREATER",
+            "NOTEQUAL",
+            "ALWAYS"
+          ]
+        },
+        {
+          "Type": "StringEnum",
+          "Name": "StencilFail",
+          "Value": "KEEP",
+          "DefaultValue": "KEEP",
+          "Selection": [
+            "KEEP",
+            "ZERO",
+            "REPLACE",
+            "INCR",
+            "INCR_WRAP",
+            "DECR",
+            "DECR_WRAP",
+            "INVERT"
+          ]
+        },
+        {
+          "Type": "StringEnum",
+          "Name": "DepthFail",
+          "Value": "KEEP",
+          "DefaultValue": "KEEP",
+          "Selection": [
+            "KEEP",
+            "ZERO",
+            "REPLACE",
+            "INCR",
+            "INCR_WRAP",
+            "DECR",
+            "DECR_WRAP",
+            "INVERT"
+          ]
+        },
+        {
+          "Type": "StringEnum",
+          "Name": "StencilDepthPass",
+          "Value": "KEEP",
+          "DefaultValue": "KEEP",
+          "Selection": [
+            "KEEP",
+            "ZERO",
+            "REPLACE",
+            "INCR",
+            "INCR_WRAP",
+            "DECR",
+            "DECR_WRAP",
+            "INVERT"
+          ]
+        }
+      ]
+    },
+    {
+      "Annotations": {
+        "$Name": "BlendState",
+        "$ShowInUi": "true",
+        "$SubSection": "Input/GpuState",
+        "$PreferredWidth": 224,
+        "$Title": "BlendState"
+      },
+      "FlowNodeType": "ClassBlock",
+      "ReturnType": "BlendState",
+      "InputDescriptor": [
+        {
+          "Type": "bool",
+          "Name": "Enabled",
+          "Value": false,
+          "DefaultValue": false
+        },
+        {
+          "Type": "bool",
+          "Name": "BlendSeparate",
+          "Value": false,
+          "DefaultValue": false
+        },
+        {
+          "Type": "StringEnum",
+          "Name": "SrcFactorRGB",
+          "Value": "ONE",
+          "DefaultValue": "ONE",
+          "Selection": [
+            "ZERO",
+            "ONE",
+            "SRC_COLOR",
+            "ONE_MINUS_SRC_COLOR",
+            "DST_COLOR",
+            "ONE_MINUS_DST_COLOR",
+            "SRC_ALPHA",
+            "ONE_MINUS_SRC_ALPHA",
+            "DST_ALPHA",
+            "ONE_MINUS_DST_ALPHA",
+            "CONSTANT_COLOR",
+            "ONE_MINUS_CONSTANT_COLOR",
+            "CONSTANT_ALPHA",
+            "ONE_MINUS_CONSTANT_ALPHA",
+            "SRC_ALPHA_SATURATE",
+            "SRC1_COLOR",
+            "ONE_MINUS_SRC1_COLOR",
+            "SRC1_ALPHA"
+          ]
+        },
+        {
+          "Type": "StringEnum",
+          "Name": "DstFactorRGB",
+          "Value": "ZERO",
+          "DefaultValue": "ZERO",
+          "Selection": [
+            "ZERO",
+            "ONE",
+            "SRC_COLOR",
+            "ONE_MINUS_SRC_COLOR",
+            "DST_COLOR",
+            "ONE_MINUS_DST_COLOR",
+            "SRC_ALPHA",
+            "ONE_MINUS_SRC_ALPHA",
+            "DST_ALPHA",
+            "ONE_MINUS_DST_ALPHA",
+            "CONSTANT_COLOR",
+            "ONE_MINUS_CONSTANT_COLOR",
+            "CONSTANT_ALPHA",
+            "ONE_MINUS_CONSTANT_ALPHA",
+            "SRC_ALPHA_SATURATE",
+            "SRC1_COLOR",
+            "ONE_MINUS_SRC1_COLOR",
+            "SRC1_ALPHA"
+          ]
+        },
+        {
+          "Type": "StringEnum",
+          "Name": "SrcFactorAlpha",
+          "Value": "ONE",
+          "DefaultValue": "ONE",
+          "Selection": [
+            "ZERO",
+            "ONE",
+            "SRC_COLOR",
+            "ONE_MINUS_SRC_COLOR",
+            "DST_COLOR",
+            "ONE_MINUS_DST_COLOR",
+            "SRC_ALPHA",
+            "ONE_MINUS_SRC_ALPHA",
+            "DST_ALPHA",
+            "ONE_MINUS_DST_ALPHA",
+            "CONSTANT_COLOR",
+            "ONE_MINUS_CONSTANT_COLOR",
+            "CONSTANT_ALPHA",
+            "ONE_MINUS_CONSTANT_ALPHA",
+            "SRC_ALPHA_SATURATE",
+            "SRC1_COLOR",
+            "ONE_MINUS_SRC1_COLOR",
+            "SRC1_ALPHA"
+          ]
+        },
+        {
+          "Type": "StringEnum",
+          "Name": "DstFactorAlpha",
+          "Value": "ZERO",
+          "DefaultValue": "ZERO",
+          "Selection": [
+            "ZERO",
+            "ONE",
+            "SRC_COLOR",
+            "ONE_MINUS_SRC_COLOR",
+            "DST_COLOR",
+            "ONE_MINUS_DST_COLOR",
+            "SRC_ALPHA",
+            "ONE_MINUS_SRC_ALPHA",
+            "DST_ALPHA",
+            "ONE_MINUS_DST_ALPHA",
+            "CONSTANT_COLOR",
+            "ONE_MINUS_CONSTANT_COLOR",
+            "CONSTANT_ALPHA",
+            "ONE_MINUS_CONSTANT_ALPHA",
+            "SRC_ALPHA_SATURATE",
+            "SRC1_COLOR",
+            "ONE_MINUS_SRC1_COLOR",
+            "SRC1_ALPHA"
+          ]
+        },
+        {
+          "Type": "StringEnum",
+          "Name": "BlendModeRGB",
+          "Value": "FUNC_ADD",
+          "DefaultValue": "FUNC_ADD",
+          "Selection": [
+            "FUNC_ADD",
+            "FUNC_SUBTRACT",
+            "FUNC_REVERSE_SUBTRACT",
+            "MIN",
+            "MAX"
+          ]
+        },
+        {
+          "Type": "StringEnum",
+          "Name": "BlendModeAlpha",
+          "Value": "FUNC_ADD",
+          "DefaultValue": "FUNC_ADD",
+          "Selection": [
+            "FUNC_ADD",
+            "FUNC_SUBTRACT",
+            "FUNC_REVERSE_SUBTRACT",
+            "MIN",
+            "MAX"
+          ]
+        }
+      ]
+    },
+    {
+      "Annotations": {
+        "$Name": "RasterizerState",
+        "$ShowInUi": "true",
+        "$SubSection": "Input/GpuState",
+        "$PreferredWidth": 224,
+        "$Title": "RasterizerState"
+      },
+      "FlowNodeType": "ClassBlock",
+      "ReturnType": "RasterizerState",
+      "InputDescriptor": [
+        {
+          "Type": "bool",
+          "Name": "Enabled",
+          "Value": true,
+          "DefaultValue": true
+        },
+        {
+          "Type": "bool",
+          "Name": "MultiSample",
+          "Value": false,
+          "DefaultValue": false
+        },
+        {
+          "Type": "bool",
+          "Name": "Scissor",
+          "Value": false,
+          "DefaultValue": false
+        },
+        {
+          "Type": "StringEnum",
+          "Name": "CullMode",
+          "Value": "BACK",
+          "DefaultValue": "BACK",
+          "Selection": [
+            "BACK",
+            "FRONT",
+            "FRONT_AND_BACK"
+          ]
+        },
+        {
+          "Type": "StringEnum",
+          "Name": "FillMode",
+          "Value": "FILL",
+          "DefaultValue": "FILL",
+          "Selection": [
+            "POINT",
+            "LINE",
+            "FILL"
+          ]
+        },
+        {
+          "Type": "StringEnum",
+          "Name": "FillMode",
+          "Value": "FILL",
+          "DefaultValue": "FILL",
+          "Selection": [
+            "POINT",
+            "LINE",
+            "FILL"
+          ]
+        },
+        {
+          "Type": "StringEnum",
+          "Name": "FrontFace",
+          "Value": "CCW",
+          "DefaultValue": "CCW",
+          "Selection": [
+            "CW",
+            "CCW"
+          ]
+        },
+        {
+          "Type": "StringEnum",
+          "Name": "PolyModeFace",
+          "Value": "FRONT_AND_BACK",
+          "DefaultValue": "FRONT_AND_BACK",
+          "Selection": [
+            "BACK",
+            "FRONT",
+            "FRONT_AND_BACK"
+          ]
+        }
+      ]
+    },
+    {
+      "Annotations": {
+        "$Name": "ColorMaskState",
+        "$ShowInUi": "true",
+        "$SubSection": "Input/GpuState",
+        "$PreferredWidth": 224,
+        "$Title": "ColorMaskState"
+      },
+      "FlowNodeType": "ClassBlock",    
+      "ReturnType": "ColorMaskState",
+      "InputDescriptor": [
+        {
+          "Type": "bool",
+          "Name": "RedMask",
+          "Value": true,
+          "DefaultValue": true
+        },
+        {
+          "Type": "bool",
+          "Name": "GreenMask",
+          "Value": true,
+          "DefaultValue": true
+        },
+        {
+          "Type": "bool",
+          "Name": "BlueMask",
+          "Value": true,
+          "DefaultValue": true
+        },
+        {
+          "Type": "bool",
+          "Name": "AlphaMask",
+          "Value": true,
+          "DefaultValue": true
+        }
+      ]
+    },
+    {
+      "Annotations": {
+        "$Name": "SamplerState",
+        "$ShowInUi": "true",
+        "$SubSection": "Input/GpuState",
+        "$PreferredWidth": 224,
+        "$Title": "SamplerState"
+      },
+      "FlowNodeType": "ClassBlock",      
+      "ReturnType": "SamplerState",
+      "InputDescriptor": [
+        {
+          "Type": "bool",
+          "Name": "MipMaps",
+          "Value": false,
+          "DefaultValue": false
+        },
+        {
+          "Type": "bool",
+          "Name": "AutoGenMips",
+          "Value": false,
+          "DefaultValue": false
+        },
+        {
+          "Type": "float",
+          "Name": "Aniso",
+          "Value": 0,
+          "DefaultValue": 0,
+          "Min": 0,
+          "Max": 16
+        },
+        {
+          "Type": "StringEnum",
+          "Name": "MinFilter",
+          "Value": "NEAREST",
+          "DefaultValue": "NEAREST",
+          "Selection": [
+            "NEAREST",
+            "LINEAR",
+            "NEAREST_MIPMAP_NEAREST",
+            "LINEAR_MIPMAP_NEAREST",
+            "NEAREST_MIPMAP_LINEAR",
+            "LINEAR_MIPMAP_LINEAR"
+          ]
+        },
+        {
+          "Type": "StringEnum",
+          "Name": "MagFilter",
+          "Value": "NEAREST",
+          "DefaultValue": "NEAREST",
+          "Selection": [
+            "NEAREST",
+            "LINEAR",
+            "NEAREST_MIPMAP_NEAREST",
+            "LINEAR_MIPMAP_NEAREST",
+            "NEAREST_MIPMAP_LINEAR",
+            "LINEAR_MIPMAP_LINEAR"
+          ]
+        },
+        {
+          "Type": "StringEnum",
+          "Name": "WrapR",
+          "Value": "REPEAT",
+          "DefaultValue": "REPEAT",
+          "Selection": [
+            "REPEAT",
+            "MIRRORED_REPEAT",
+            "CLAMP_TO_EDGE",
+            "CLAMP_TO_BORDER",
+            "MIRROR_CLAMP_TO_EDGE"
+          ]
+        },
+        {
+          "Type": "StringEnum",
+          "Name": "WrapS",
+          "Value": "REPEAT",
+          "DefaultValue": "REPEAT",
+          "Selection": [
+            "REPEAT",
+            "MIRRORED_REPEAT",
+            "CLAMP_TO_EDGE",
+            "CLAMP_TO_BORDER",
+            "MIRROR_CLAMP_TO_EDGE"
+          ]
+        },
+        {
+          "Type": "StringEnum",
+          "Name": "WrapT",
+          "Value": "REPEAT",
+          "DefaultValue": "REPEAT",
+          "Selection": [
+            "REPEAT",
+            "MIRRORED_REPEAT",
+            "CLAMP_TO_EDGE",
+            "CLAMP_TO_BORDER",
+            "MIRROR_CLAMP_TO_EDGE"
+          ]
+        },
+        {
+          "Type": "StringEnum",
+          "Name": "TextureCompareMode",
+          "Value": "NONE",
+          "DefaultValue": "NONE",
+          "Selection": [
+            "NONE",
+            "COMPARE_R_TO_TEXTURE"
+          ]
+        },
+        {
+          "Type": "StringEnum",
+          "Name": "DepthCompareFunc",
+          "Value": "NONE",
+          "DefaultValue": "NONE",
+          "Selection": [
+            "NONE",
+            "NEVER",
+            "LESS",
+            "LEQUAL",
+            "EQUAL",
+            "GEQUAL",
+            "GREATER",
+            "NOTEQUAL",
+            "ALWAYS"
+          ]
+        },
+        {
+          "Type": "StringEnum",
+          "Name": "DepthTextureMode",
+          "Value": "NONE",
+          "DefaultValue": "NONE",
+          "Selection": [
+            "NONE",
+            "LUMINANCE",
+            "INTENSITY",
+            "ALPHA"
+          ]
+        }
+      ]
+    }
+  ]
+}

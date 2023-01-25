@@ -1,0 +1,30 @@
+{
+  "Annotations": {
+    "$Name": "RenderPass",
+    "$ShowInUi": "true",
+    "$SubSection": "Input/GpuState",
+    "$Title": "RenderPass"
+  },
+  "InputDescriptor": [
+   {
+      "Type"        : "string",
+      "Name"        : "Name",
+      "Value"       : "",
+      "DefaultValue": ""
+   }
+  ],
+  "Ports": [
+  {
+    "Type"  : "DepthState",
+    "Name"  : "DepthState",
+    "Flags" :  2
+  }
+
+  ]
+  
+    
+ 
+
+
+
+}

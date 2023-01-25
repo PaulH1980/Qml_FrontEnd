@@ -1,0 +1,23 @@
+{
+	"ShaderFunction": 
+	[
+	  {
+  		"ShowInUI"		: false,
+		"Description"   : "This is a test",
+  		"SubSection"  	: "Shader/tests",		
+  		"FunctionName"  : "addVector3",
+  		"ReturnValue"   : { "Type": "vec3", "Name": "" },
+  		"Input": [{
+  				"Type": "vec3",
+  				"Name": "a"
+  			},
+  			{
+  				"Type": "vec3",
+  				"Name": "b"
+  			}
+  		],
+  		"Output": [],
+  		"CodeBlock": "return a + b;"
+	  }
+	]
+}

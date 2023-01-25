@@ -1,0 +1,393 @@
+
+/*
+    $Title		"Plus"
+    $Name 		"Plus"
+    $SubSection "Math/Float"
+    $ShowInUi 	"true"
+*/
+float Plus(const float a, const float b)
+{
+    return a + b;
+}
+
+/*
+    $Title			"Minus"
+    $FunctionName 	"Minus"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float Minus(const float a, const float b)
+{
+    return a - b;
+}
+
+/*
+    $Title			"Multiply"
+    $FunctionName 	"Multiply"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float Multiply(const float a, const float b)
+{
+    return a * b;
+}
+
+/*
+    $Title			"Divide"
+    $FunctionName 	"Divide"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float Divide(const float a, const float b)
+{
+    return a / b;
+}
+
+/*
+    $Title			"Modulo"
+    $FunctionName 	"Modulo"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float Modulo(const float a, const float b)
+{
+    return x - y * floor(x / y);
+}
+
+
+/*
+    $Title			"Sqrt"
+    $FunctionName 	"Sqrt"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float Sqrt(const float a)
+{
+    return sqrt(a);
+}
+
+/*
+    $Title			"InvSqrt"
+    $FunctionName 	"InvSqrt"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float InvSqrt(const float a)
+{
+    return inversesqrt(a);
+}
+
+/*
+    $Title			"Abs"
+    $FunctionName 	"Abs"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float Abs(const float a)
+{
+    return abs(a);
+}
+
+/*
+    $Title			"Floor"
+    $FunctionName 	"Floor"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float Floor(const float a)
+{
+    return floor(a);
+}
+
+/*
+    $Title			"Ceil"
+    $FunctionName 	"Ceil"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float Ceil(const float a)
+{
+    return ceil(a);
+}
+
+
+/*
+    $Title			"Sign"
+    $FunctionName 	"Sign"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float Sign(const float a)
+{
+    return sign(a);
+}
+
+/*
+    $Title			"Fract"
+    $FunctionName 	"Fract"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float Fract(const float a)
+{
+    return fract(a);
+}
+
+
+/*
+    $Title			"Min"
+    $FunctionName 	"Min"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float Min(const float a, const float b)
+{
+    return min(a, b);
+}
+
+/*
+    $Title			"Max"
+    $FunctionName 	"Max"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float Max(const float a, const float b)
+{
+    return max(a, b);
+}
+
+
+/*
+    $Title			"Step"
+    $FunctionName 	"Step"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float Step(const float a)
+{
+    return step(a);
+}
+
+/*
+    $Title			"SmoothStep"
+    $FunctionName 	"SmoothStep"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float SmoothStep(const float a)
+{
+    return smoothstep(a);
+}
+
+/*
+    $Title			"Lerp"
+    $FunctionName 	"Lerp"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float Lerp(const float start, const float end, const float weight)
+{
+    return mix(start, end, weight);
+}
+
+/*
+    $Title			"Clamp"
+    $FunctionName 	"Clamp"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float Clamp(const float min, const float max, const float value)
+{
+    return clamp(value, min, max);
+}
+
+/*
+    $Title			"Cos"
+    $FunctionName 	"Cos"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float Cos(const float a)
+{
+    return cos(a);
+}
+
+/*
+    $Title			"Sin"
+    $FunctionName 	"Sin"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float Sin(const float a)
+{
+    return sin(a);
+}
+
+/*
+    $Title			"Tan"
+    $FunctionName 	"Tan"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float Tan(const float a)
+{
+    return tan(a);
+}
+
+/*
+    $Title			"ACos"
+    $FunctionName 	"ACos"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float ACos(const float a)
+{
+    return acos(a);
+}
+
+/*
+    $Title			"ASin"
+    $FunctionName 	"ASin"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float ASin(const float a)
+{
+    return asin(a);
+}
+
+/*
+    $Title			"ATan"
+    $FunctionName 	"ATan"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float ATan(const float a, const float b)
+{
+    return atan(a, b);
+}
+
+/*
+    $Title			"ToDegrees"
+    $FunctionName 	"ToDegrees"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float ToDegrees(const float a)
+{
+    return degrees(a);
+}
+
+/*
+    $Title			"ToRadians"
+    $FunctionName 	"ToRadians"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float ToRadians(const float a)
+{
+    return radians(a);
+}
+
+
+/*
+    $Title			"Pow"
+    $FunctionName 	"Pow"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float Pow(const float a, const float b)
+{
+    return pow(a, b);
+}
+
+/*
+    $Title			"Pow2"
+    $FunctionName 	"Pow2"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float Pow2(const float a)
+{
+    return pow2(a);
+}
+
+/*
+    $Title			"Log"
+    $FunctionName 	"Log"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float Log(const float a, const float b)
+{
+    return log(a, b);
+}
+
+/*
+    $Title			"Log2"
+    $FunctionName 	"Log2"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float Log2(const float a)
+{
+    return log2(a);
+}
+
+/*
+    $Title			"Exp"
+    $FunctionName 	"Exp"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float Exp(const float a)
+{
+    return exp(a);
+}
+
+/*
+    $Title			"Exp2"
+    $FunctionName 	"Exp2"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float Exp2(const float a)
+{
+    return exp2(a);
+}
+
+
+
+/*
+    $Title			"FaceForward"
+    $FunctionName 	"FaceForward"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float FaceForward(const float N, const float I, const float NRef)
+{
+    return faceforward(N, I, NRef);
+}
+
+/*
+    $Title			"Reflect"
+    $FunctionName 	"Reflect"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float Reflect(const float I, const float N)
+{
+    return reflect(I, N, eta);
+}
+
+/*
+    $Title			"Refract"
+    $FunctionName 	"Refract"
+    $SubSection 	"Math/Float"
+    $ShowInUi 		"true"
+*/
+float Refract(const float I, const float N, float eta)
+{
+    return refract(I, N, eta);
+}
+
